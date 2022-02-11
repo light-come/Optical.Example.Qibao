@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>可视化地理空间数据服务研发平台 Visualization map spatial data service R&D</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="\lib\jquery\jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../dist/include-lib.js" libpath="../" include="VMSDS"></script>
+    <script type="text/javascript" src="../js/example.js" libpath="../" include="VMSDS"></script>
+  <style>
+    html,body{
+        margin: 0;
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    /* 地图容器 */
+    .map-container {
+        /* top: 5.1%; */
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+  
+  </style>
+
+  </head>
+
+  <body  scroll="no" id="mapbody">
+	<!-- <div id="background"></div> -->
+  <!-- <div id="container"></div> -->
+  <!-- 地图容器 -->
+  <div id="Overview" class="map-container"></div>
+  <div id="toolbar" style="margin: 5px;padding: 2px 5px;position: absolute;  z-index: 999;color: #fff;box-shadow: 0 1px 10px 1px rgb(0 0 0 / 12%); backdrop-filter: blur(20px);border-radius: 4px;">
+    <table>
+      <tbody>
+        <tr>
+          <td>character rate</td>
+          <td>
+            <input type="range" min="-5" max="5" step="1" data-bind="value: rate, valueUpdate: 'input'">
+          </td>
+        </tr>
+        <tr>
+          <td>character perspective</td>
+          <td>
+            <input type="range" min="0" max="3" step="3" data-bind="value: perspective, valueUpdate: 'input'">
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <div id="mapBox" class="map-container"></div>
+ 
+
+  <script>
+    /**实列方法**/
+    var QIBAO = new QIBAO();
+    QIBAO.example_InitMap();//初始化地球
+
+    VMSDS.core.Location(window.VMSDS.GIS,{
+      h: 5.66
+      ,p: -0.4613129754
+      ,r: 6.28
+      ,x: 120.267329
+      ,y: 30.293386
+      ,z: 71.56
+        ,duration : 0
+        ,force:true//强制
+        
+    });
+    QIBAO.example_BuildingStratification()
+    
+
+    QIBAO.IntelligentRoaming({
+        timer : 2,//模型行走数度
+        FineBezierTimer : 0.01,//算法路径速度 过弯
+        multiplier : 1,//当前世界速度 (可整体提高行走速度 必要也可以暂停模型)
+        nodeTime : 2,//停留时长 s
+        debug:true
+    })
+
+    setTimeout(() => {
+      QIBAO.IntelligentRoaming_Visual({
+          visual:{
+            type : 3,
+            height:10.4 * 2,
+            direction : -35 * 2.5,
+          }
+        }//视角 0是无绑定 1是第一人称 3是第三人称 2是跟随
+      )
+    }, 2000);
+
+    // QIBAO.example_addBaseLayer()
+  
+  </script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>可视化地理空间数据服务研发平台 Visualization map spatial data service R&D</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="\lib\jquery\jquery-2.1.4.min.js"></script>
+
+  </head>
+  <style>
+       html,body{
+        margin: 0;
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    iframe {
+        /* top: 5.1%; */
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        border: medium none;
+    }
+    /* 功能按键容器 */
+    .infoview div {
+        margin-bottom: 5px;
+    }
+
+    .infoview {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 15px;
+        border-radius: 4px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 3px 14px rgba(128, 128, 128, 0.5);
+        z-index: 999;
+    }
+
+    .infoview input,
+    .infoview select,
+    .infoview textarea {
+        color: #ffffff;
+        background-color: rgba(32, 160, 255, 0.2);
+        border: 1px solid #e4eaec;
+        font-size: 14px;
+    }
+  </style>
+  <body  scroll="no" id="mapbody">
+    <div class="infoview">
+        <div>
+            Iframe：测试接口
+            <input type="button" value="添加底图" onclick="implement(BaseLayerData);" />
+            <input type="button" value="自转" onclick="implement(PlayRevolutionData);" />
+            <input type="button" value="停止自转" onclick="implement(StopRevolutionData);" />
+        </div>
+        <div>
+            Iframe：流程接口
+            <input type="button" value="加载模型 建筑分层" onclick="implement(BuildingStratification);" />
+        </div>
+        <div>
+            泵体 定位 接口 
+            <input type="button" value="定位一号 泵体" onclick="implement(positioning_pump,0);" />
+            <input type="button" value="定位二号 泵体" onclick="implement(positioning_pump,1);" />
+            <input type="button" value="定位三号 泵体" onclick="implement(positioning_pump,2);" />
+            <input type="button" value="定位++ 泵体" onclick="positioning_pump.value++;implement(positioning_pump);" />
+            <input type="button" value="定位一号 清污机及拦污栅" onclick="implement(positioning_pump,'1435125432065241089');" />
+            <input type="button" value="定位二号 清污机及拦污栅" onclick="implement(positioning_pump,'1435125716640378882');" />
+            <input type="button" value="定位三号 清污机及拦污栅" onclick="implement(positioning_pump,'1435126152793468930');" />
+            <input type="button" value="定位四号 清污机及拦污栅" onclick="implement(positioning_pump,'1435126508797603842');" />
+            
+        </div>
+        <div>
+            泵体 气泡 接口
+            <input type="button" value="展示全部气泡 泵体" onclick="pump_popup.value.index = '*';implement(pump_popup);" />
+            <input type="button" value="气泡一号 泵体" onclick="implement(pump_popup,0);" />
+            <input type="button" value="气泡二号 泵体" onclick="implement(pump_popup,1);" />
+            <input type="button" value="气泡三号 泵体" onclick="implement(pump_popup,2);" />
+            <input type="button" value="气泡++ 泵体" onclick="pump_popup.value++;implement(pump_popup);" />
+        </div>
+        <div>
+            泵体 气泡 接口 控制显示隐藏 更新内容
+            <input type="button" value="气泡一号 泵体 " onclick="implement(pump_popup,0);popup_setVisible.value.visible =  !popup_setVisible.value.visible;implement(popup_setVisible);" />
+            <input type="button" value="气泡一号 泵体 " onclick="implement(pump_popup,0);implement(popup_update);" />
+        </div> 
+        <div>
+            泵体 事件
+            <input type="button" value="一号 泵体 告警" onclick="implement(positioning_pump,0);implement(pump_popup,0);implement(popup_update);implement(event_spread);" />
+            <input type="button" value="一号 泵体 告警 销毁" onclick="implement(event_spread_destroy);" />
+        </div>
+        <div>
+            人物漫游
+            <input type="button" value="渲染 漫游 动作(更新-鹰眼)(更新-室内漫游)" onclick="implement(IntelligentRoaming_Destroy);implement(IntelligentRoaming);" />
+            <input type="button" value="渲染 漫游 选点(更新-选点)" onclick="implement(IntelligentRoaming_Destroy);implement(PointSelectionRoaming);" />
+            <input type="button" value="切换 漫游 视角" onclick="
+            IntelligentRoaming_Visual.value.visual.type++; 
+            if(IntelligentRoaming_Visual.value.visual.type >= 6) {IntelligentRoaming_Visual.value.visual.type = 0 ;}
+             implement(IntelligentRoaming_Visual);" />
+            <input type="button" value="暂停 漫游 动作" onclick="IntelligentRoaming_Speed.value.multiplier=0;implement(IntelligentRoaming_Speed);" />
+            <input type="button" value="继续 漫游 动作" onclick="IntelligentRoaming_Speed.value.multiplier=1;implement(IntelligentRoaming_Speed);" />
+            <input type="button" value="加速 漫游 动作" onclick="IntelligentRoaming_Speed.value.multiplier++;implement(IntelligentRoaming_Speed);" />
+            <input type="button" value="减速 漫游 动作" onclick="IntelligentRoaming_Speed.value.multiplier--;implement(IntelligentRoaming_Speed);" />
+            <input type="button" value="销毁 漫游 动作" onclick="implement(IntelligentRoaming_Destroy);" /> 
+            
+            <input type="button" value="跳转 漫游 点位++" onclick="JumpTimePoint.value.type = '++';implement(JumpTimePoint);" />
+            <input type="button" value="跳转 漫游 点位--" onclick="JumpTimePoint.value.type = '--';implement(JumpTimePoint);" />
+        </div>
+        <div>  
+            鼠标 事件
+            <input type="button" value="点击 鼠标" onclick="implement(SingleClickEvent);" />
+            <input type="button" value="移动 鼠标" onclick="implement(MobileDetection);" /> 
+            <input type="button" value="鼠标 点击 泵体" onclick="implement(PumpBodyBuildingClick);" />
+        </div>
+        <div>  
+            建筑 效果
+            <input type="button" value="单体模型鼠标事件(点击)方案四" onclick="implement(Architecture4);" />
+            <input type="button" value="单体模型鼠标事件(移动)方案三" onclick="implement(Architecture3);" />
+            <input type="button" value="单体模型鼠标事件(移动)方案二 改" onclick="implement(Architecture2);" />
+            <input type="button" value="单体模型鼠标事件(透明)方案一" onclick="implement(Architecture1);" />
+        </div>
+        <div>  
+            水域 信息
+            <input type="button" value="水域信息" onclick="implement(Water);" />
+        </div>
+        <div>  
+            管理区
+            <input type="button" value="管理区范围" onclick="implement(SolidWall);" />
+        </div>
+        <div>  
+            场景接口
+            <input type="button" value="设置时间为中午" onclick="implement(SetWorldTime);" />
+        </div>
+        <div>  
+            <input type="button" value="飞行全景漫游" onclick="document.getElementById('core_content').src='飞行全景漫游.html';" />
+            <input type="button" value="飞行全景漫游 关闭" onclick="document.getElementById('core_content').src='iframeIndex.html';" />
+        </div>
+        <div>  
+            标签
+            <input type="button" value="添加标签" onclick="implement(addlabels);" />
+            <input type="button" value="标签隐藏显示" onclick="implement(visibilitylabels);" /> 
+            
+            <input type="button" value="添加隐患点标签" onclick="implement(addProblemPoints);" />
+            <input type="button" value="隐患点隐藏显示" onclick=" implement(visibilityProblem); visibilityProblem.value.index++;" />
+            
+            <input type="button" value="定位相机" onclick="implement(positioning_camera);" />
+        </div>
+    </div>
+    <iframe
+        id="core_content"
+        name="iframeName"
+        ref="core_content"
+        title="core_content"
+        src='../iframeIndex.html'
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"
+        scrolling="auto"
+    ></iframe>
+  <script>
+    //Frame 对象
+    const FrameObj = document.getElementById('core_content');
+    //接收器
+    window.receiveMessageFromIndex = function (e) {
+        if (e !== undefined) {
+            console.log( '接收', e.data);
+        }
+    }
+    //监听message事件
+    window.addEventListener("message", window.receiveMessageFromIndex, false);
+
+    //规定发送格式
+    const data = {
+        event : "方法名称",
+        value: "内容:hello world :)"
+    }
+   
+    //执行函数
+    function implement(params,value) {
+        if(value != null) params.value = value;
+        FrameObj.contentWindow.postMessage(params, '*');
+    }
+    //发送器
+    window.onload = function(){
+        FrameObj.contentWindow.postMessage(data, '*');
+    }
+
+
+    /////////////////////////////////////////////////////////////////行参
+
+    //定位相机
+    const positioning_camera = {
+        event : "example_positioning_camera",
+        value:'3FD815955E4811ECA56200163E0132C0'
+    } 
+
+
+    //添加隐患点标签
+    const addProblemPoints = {
+        event : "addProblemPoints",
+        value:true
+    } 
+    //隐藏显示隐患点标签
+    const visibilityProblem = {
+        event : "visibilityProblem",
+        value:{
+            visibility:false,
+            index:0//隐藏某个标签 0-6 不可超过
+        }
+    } 
+
+    //添加标签
+    const addlabels = {
+        event : "addlabels",
+        value:{}
+    } 
+    //隐藏显示标签
+    const visibilitylabels = {
+        event : "visibilitylabels",
+        value:false
+    } 
+    //管理区域
+    const SolidWall = {
+        event : "_SolidWall",
+        value: {
+            
+        }
+    }
+    //设置时间
+    const SetWorldTime = {
+        event : "SetWorldTime",
+        value: {
+        }
+    }
+    //水域
+    const Water = {
+        event : "example_water",
+        value: {
+            
+        }
+    }
+    // 单体模型鼠标事件(点击)方案四
+    const Architecture4 = {
+        event : "BuildPull_out",
+        value: null
+    }
+    // 单体模型鼠标事件(移动)方案三
+    const Architecture3 = {
+        event : "MobileDetectionV2",
+        value: null
+    }
+    // 单体模型鼠标事件(移动)方案二
+    const Architecture2 = {
+        event : "MobileDetection",
+        value: null
+    }
+    // 单体模型鼠标事件(透明)方案一
+    const Architecture1 = {
+        event : "example_ActiveClickPenetration",
+        value: null
+    }
+    //人物漫游 渲染
+    const IntelligentRoaming = {
+        event : "IntelligentRoaming",
+        value:{
+            timer : 2,//模型行走数度
+            FineBezierTimer : 0.01,//算法路径速度 过弯
+            multiplier : 1,//当前世界速度 (可整体提高行走速度 必要也可以暂停模型)
+            nodeTime : 2,//停留时长 s
+        }
+    } 
+    //人物选点漫游 渲染
+    const PointSelectionRoaming = {
+        event : "PointSelectionRoaming",
+        value: {
+            timer : 2,//模型行走数度
+            FineBezierTimer : 0.01,//算法路径速度 过弯
+            multiplier : 1,//当前世界速度 (可整体提高行走速度 必要也可以暂停模型)
+            nodeTime : 2,//停留时长 s
+        }
+    }
+    //视角
+    const IntelligentRoaming_Visual ={
+        event : "IntelligentRoaming_Visual",
+        value: {
+            visual : {
+                type : 3,
+                zoomTo : false,
+                height:10.4 * 2,//视角高度
+                direction : -35 * 2.5,//视角上下旋转轴
+            }//视角 0是无绑定 1是第一人称 3是第三人称 2是跟随
+        }
+
+    }
+    //跳转点位 ++ 操作
+    const JumpTimePoint = {
+        event : "JumpTimePoint",
+        value: {
+            type:'--'
+        }//--
+    }
+    //销毁漫游
+    const IntelligentRoaming_Destroy = {
+        event : "IntelligentRoaming_Destroy",
+        value: {
+            
+        }
+    }
+    //漫游行走控制
+    const IntelligentRoaming_Speed = {
+        event : "IntelligentRoaming_Speed",
+        value: {
+            multiplier : 1,//当前世界速度 (可整体提高行走速度 必要也可以暂停模型)
+        }
+    }
+    //事件特效展示 隐患的显示红色闪烁
+    const event_spread = {
+        event : "example_event_spread",
+        value: {
+            index:'1436237362930700290'
+        }
+    }
+    //特效销毁
+     const event_spread_destroy = {
+        event : "example_event_spread_destroy",
+        value: {
+            index:0
+        }
+    }
+    //定位泵体
+    const positioning_pump = {
+        event : "example_positioning_pump",
+        value: 0
+    }
+    //泵体气泡
+    const pump_popup = {
+        event : "example_pump_popup",
+        value: {
+            index:'*'
+        }
+    } 
+  
+    //显示隐藏泵体气泡
+    const popup_setVisible = {
+        event : "example_popup_setVisible",
+        value: {
+            index:0,
+            visible:false,
+        }
+    }
+    //更新泵体气泡
+    const popup_update = {
+        event : "example_popup_update",
+        value: {
+            index:'1435148518881800194',
+            header:'无法 打开一号 泵体 (开)',//文本内容
+            text1:'无法 打开一号 泵体 (开)',//文本内容
+            text2:'无法 打开一号 泵体 (开)',//文本内容
+            text3:'无法 打开一号 泵体 (开)',//文本内容
+            text:"",
+            grade:3,//状态 或 等级 1~3
+            popupIndex:0
+        }
+    }
+    //自转
+    const PlayRevolutionData = {
+        event : "example_Revolution",
+        value: "play"
+    }
+    //停止自转
+    const StopRevolutionData = {
+        event : "example_Revolution",
+        value: "stop"
+    }
+    //添加底图
+    const BaseLayerData = {
+        
+        event : "example_addBaseLayer",
+        value: "play"
+    } 
+    //建筑分层
+    const BuildingStratification = {
+        event : "example_BuildingStratification"
+    } 
+    //透明
+    const TransparentVisualization = {
+        event : "TransparentVisualization",
+        value:{
+            visible :false
+        }
+    }
+    //鼠标 移动
+    const MobileDetection = {
+        event : "MobileDetection"
+    } 
+    //鼠标 点击泵体
+    const PumpBodyBuildingClick = {
+        event : "PumpBodyBuildingClick"
+    }
+    //鼠标 点击
+    const SingleClickEvent = {
+        event : "SingleClickEvent"
+    }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+	"created": "2021-03-01T05:00:01+01:00",
+	"type": "VisaRequirements",
+	"countries": [
+		{ "name": "Afghanistan", "code": "AFG", "destinations": [	
+				{ 
+					"d_name": "Albania",
+					"visa_required": "yes",
+					"visa_title": "Visa required",
+					"notes": "" 
+				},	
+				{
+					"d_name": "Algeria",
+					"visa_required": "yes",
+					"visa_title": "Visa required",
+					"notes": "" 
+				},	
+				{ 
+					"d_name": "Andorra",
+					"visa_required": "yes",
+					"visa_title": "Visa required",
+					"notes": "" 
+				}
+		] }
+				
+	]
+}

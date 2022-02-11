@@ -1,0 +1,1671 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_Revolution(play)",
+			"NAME_LONG": "启动球体自转",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_Revolution('stop')",
+			"NAME_LONG": "停止球体自转",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_add3DTiles()",
+			"NAME_LONG": "加载3DTiles模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_AddModels()",
+			"NAME_LONG": "加载GLTF/GLB模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_HideDisplay3DTiles()",
+			"NAME_LONG": "隐藏/显示3DTiles模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_remove3DTiles()",
+			"NAME_LONG": "移除3DTiles模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_Location()",
+			"NAME_LONG": "定位3DTiles模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_drawPoint()",
+			"NAME_LONG": "画点",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DynamicDraw('drawPolyline')",
+			"NAME_LONG": "画折线",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DynamicDraw('drawPolygon')",
+			"NAME_LONG": "画多边形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DynamicDraw('drawRectangle')",
+			"NAME_LONG": "画矩形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DynamicDraw('drawCircle')",
+			"NAME_LONG": "画圆",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_editEntity()",
+			"NAME_LONG": "编辑图形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_deleteEntity()",
+			"NAME_LONG": "删除图形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_addCoordinateBox()",
+			"NAME_LONG": "鼠标位置控件",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_addNavigation()",
+			"NAME_LONG": "导航控件",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_AutoRotate()",
+			"NAME_LONG": "公转-围绕旋转",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_Fogging()",
+			"NAME_LONG": "雾特效",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_snowSystem_Shaders()",
+			"NAME_LONG": "雪特效",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_RainwaterSystem_Shaders()",
+			"NAME_LONG": "雨特效",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_measureLineFlat()",
+			"NAME_LONG": "绘制测高",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_deleteAltimetry()",
+			"NAME_LONG": "删除测高",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_measureDraw('drawPolyline')",
+			"NAME_LONG": "测距离",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_measureDraw('drawPolygon')",
+			"NAME_LONG": "测多边形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_bright()",
+			"NAME_LONG": "全局发光",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_runshineAnalysis()",
+			"NAME_LONG": "日照分析",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_qxsy_add3DTiles()",
+			"NAME_LONG": "加载倾斜摄影模型",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DropView()",
+			"NAME_LONG": "视频投放",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_FlyingGame()",
+			"NAME_LONG": "飞行小游戏",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DepthDetection()",
+			"NAME_LONG": "人物贴地行走",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_VisualAnalysis('add')",
+			"NAME_LONG": "添加可视域分析",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_VisualAnalysis('clear')",
+			"NAME_LONG": "清除可视域分析",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_getCameraView()",
+			"NAME_LONG": "获取当前视野",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_water()",
+			"NAME_LONG": "水面效果",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_altitude()",
+			"NAME_LONG": "添加高程地形",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DistributionMap()",
+			"NAME_LONG": "添加热力图",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_perspective()",
+			"NAME_LONG": "地下模式",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_SolidWall()",
+			"NAME_LONG": "立体墙(电子围栏)",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_flood()",
+			"NAME_LONG": "淹没分析",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_DynamicLine()",
+			"NAME_LONG": "动态线",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+	,
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Polygon",
+			"coordinates": [
+				[
+					[31.287890625000017, -22.40205078125001],
+					[31.197265625, -22.34492187500001],
+					[31.07343750000001, -22.30781250000001],
+					[30.916113281250006, -22.29072265625001]
+				]
+			]
+		},
+		"properties": {
+			"scalerank": 1,
+			"LABELRANK": 3,
+			"SOV_A3": "ZWE",
+			"ADM0_DIF": 0,
+			"LEVEL": 2,
+			"TYPE": "Sovereign country",
+			"ADM0_A3": "ZWE",
+			"GEOU_DIF": 0,
+			"GU_A3": "ZWE",
+			"SU_DIF": 0,
+			"SU_A3": "ZWE",
+			"BRK_DIFF": 0,
+			"NAME": "example_layered()",
+			"NAME_LONG": "建筑分层",
+			"BRK_A3": "ZWE",
+			"BRK_NAME": "",
+			"BRK_GROUP": "",
+			"ABBREV": "Zimb.",
+			"POSTAL": "ZW",
+			"FORMAL_FR": "",
+			"NAME_CIAWF": "",
+			"NOTE_ADM0": "",
+			"NOTE_BRK": "",
+			"NAME_SORT": ""
+		}
+	}
+]
+}
