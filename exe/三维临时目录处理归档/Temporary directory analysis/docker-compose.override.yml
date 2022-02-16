@@ -1,9 +1,0 @@
-version: '3.4'
-
-services:
-  temporarydirectoryanalysis:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "9730"
-      - "9731"
