@@ -41,8 +41,8 @@
 
   <script>
     /**实列方法**/
-    var demo = new demo();
-    demo.example_InitMap();//初始化地球
+    var QIBAO = new QIBAO();
+    QIBAO.example_InitMap();//初始化地球
 
     $.get("http://gis.crcr.top:9730/Dimensional/GetBuildingStructure", function(data){
       for (let index = 0; index < data.datas[0].Routefile.file3Dtiles.length; index++) {

@@ -1,0 +1,21 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+WORKDIR /app
+EXPOSE 9730
+EXPOSE 9731
+FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+WORKDIR /src
+COPY ["Temporary directory analysis/Temporary directory analysis.csproj", "Temporary directory analysis/"]
+RUN dotnet restore "Temporary directory analysis/Temporary directory analysis.csproj"
+COPY . .
+WORKDIR "/src/Temporary directory analysis"
+RUN dotnet build "Temporary directory analysis.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Temporary directory analysis.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Temporary directory analysis.dll"]

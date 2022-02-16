@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  temporarydirectoryanalysis:
+    image: ${DOCKER_REGISTRY-}temporarydirectoryanalysis
+    build:
+      context: .
+      dockerfile: Temporary directory analysis/Dockerfile

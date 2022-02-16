@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  temporarydirectoryanalysis:
+    image: temporarydirectoryanalysis:dev
+    container_name: Temporary_directory_analysis
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Temporary directory analysis"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_temporarydirectoryanalysis$
+    volumes:
+      - D:\数据\公司项目同步\九堡水域匝道-项目\qi-bao_-cesium\exe\三维临时目录处理归档\Temporary directory analysis\Temporary directory analysis:/app
+      - D:\数据\公司项目同步\九堡水域匝道-项目\qi-bao_-cesium\exe\三维临时目录处理归档\Temporary directory analysis:/src
+      - C:\Users\13655\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_temporarydirectoryanalysis$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_temporarydirectoryanalysis$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

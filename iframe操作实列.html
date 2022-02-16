@@ -150,7 +150,8 @@
             
             <input type="button" value="添加隐患点标签" onclick="implement(addProblemPoints);" />
             <input type="button" value="隐患点隐藏显示" onclick=" implement(visibilityProblem); visibilityProblem.value.index++;" />
-            
+            <input type="button" value="添加沉降观测点" onclick="implement(addcjgcd);" />
+            <input type="button" value="沉降观测点隐藏显示" onclick=" implement(visibilitycjgcd); visibilitycjgcd.value.index++;" />
             <input type="button" value="定位相机" onclick="implement(positioning_camera);" />
         </div>
     </div>
@@ -200,7 +201,19 @@
         value:'3FD815955E4811ECA56200163E0132C0'
     } 
 
-
+   //添加隐患点标签
+    const addcjgcd = {
+        event : "addcjgcd",
+        value:true
+    } 
+    //隐藏显示隐患点标签
+    const visibilitycjgcd = {
+        event : "visibilitycjgcd",
+        value:{
+            visibility:false,
+            index:0//隐藏某个标签 0-12 不可超过
+        }
+    } 
     //添加隐患点标签
     const addProblemPoints = {
         event : "addProblemPoints",

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0de4ac4e-cf15-447d-b9c6-70fca4a1dbfa": {
+      "ProjectGuid": "0de4ac4e-cf15-447d-b9c6-70fca4a1dbfa",
+      "DisplayName": "Temporary directory analysis",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
