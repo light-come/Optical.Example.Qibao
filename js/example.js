@@ -1083,7 +1083,7 @@
     example_add3DTiles() {
       var uri = "/assets/model/";
       if (!webgl_debug) var uri = "/3D/assets/model/";
-      if(!VMSDS.GIS)return
+      if (!VMSDS.GIS) return;
       VMSDS.core.add3DTiles(
         VMSDS.GIS,
         {
@@ -1615,10 +1615,10 @@
         );
         var entity = LineMovement(viewer, a, {
           time: 2, //线条间隔速度
-          stopTime:3, //模型结束时间
+          stopTime: 3, //模型结束时间
           multiplier: 1, // 时间速率，数字越大时间过的越快
         });
-        if(index % 2 == 0)
+        if (index % 2 == 0)
           entity.path = {
             show: true,
             leadTime: 0.5,
@@ -1632,8 +1632,7 @@
             }),
           };
       }
-    
-     
+
       //线条漫游
       function LineMovement(viewer, datas, options) {
         if (options.time != undefined) {
@@ -1756,48 +1755,46 @@
       if (!webgl_debug) var _uri = "/3D/core/";
 
       var array = [
-        {x: 120.26423034160987, y: 30.297508620981308, z: -0.0005481249938256232}
-        ,{x: 120.26904954130474, y: 30.29751150385871, z: -0.0005443505994433334}
-        ,{x: 120.26905168757906, y: 30.292162853325785, z: -0.0002859597184876232}
-        ,{x: 120.26425104776932, y: 30.292164102108764, z: -0.0002865974584816008}
+        { x: 120.26423034160987, y: 30.297508620981308, z: -0.0005481249938256232 },
+        { x: 120.26904954130474, y: 30.29751150385871, z: -0.0005443505994433334 },
+        { x: 120.26905168757906, y: 30.292162853325785, z: -0.0002859597184876232 },
+        { x: 120.26425104776932, y: 30.292164102108764, z: -0.0002865974584816008 },
       ];
       //河道关键点数组
       var RiverPoint = [];
       array.forEach(element => {
-        RiverPoint.push(element.x,element.y)
+        RiverPoint.push(element.x, element.y);
       });
-     
-      var polygon = viewer.scene.primitives.add(new Cesium.Primitive({
-        geometryInstances : new Cesium.GeometryInstance({
-          geometry : new Cesium.PolygonGeometry({
-            polygonHierarchy : new Cesium.PolygonHierarchy(
-              Cesium.Cartesian3.fromDegreesArray(RiverPoint)
-            ),
-            extrudedHeight: 5.2,
-            height: 5.2,
-            vertexFormat: Cesium.EllipsoidSurfaceAppearance.VERTEX_FORMAT
-          })
-        }),
-        appearance : new Cesium.EllipsoidSurfaceAppearance({
-          aboveGround : true,
-          material : new Cesium.Material({
-            fabric : {
-              type : 'Water',
-              uniforms : {
-                baseWaterColor: new Cesium.Color.fromCssColorString("#fff").withAlpha(0.1),//new Cesium.Color.AQUA.withAlpha(0.1),082567
-                normalMap:Cesium.buildModuleUrl('Assets/Textures/waterNormals.jpg'),
-                frequency: 1000.0,//频率
-                animationSpeed: 0.01,//动画速度
-                amplitude: 10//振幅
-              }
-            }
-          })
-        }),
-        show : true
-      }));
+
+      var polygon = viewer.scene.primitives.add(
+        new Cesium.Primitive({
+          geometryInstances: new Cesium.GeometryInstance({
+            geometry: new Cesium.PolygonGeometry({
+              polygonHierarchy: new Cesium.PolygonHierarchy(Cesium.Cartesian3.fromDegreesArray(RiverPoint)),
+              extrudedHeight: 5.2,
+              height: 5.2,
+              vertexFormat: Cesium.EllipsoidSurfaceAppearance.VERTEX_FORMAT,
+            }),
+          }),
+          appearance: new Cesium.EllipsoidSurfaceAppearance({
+            aboveGround: true,
+            material: new Cesium.Material({
+              fabric: {
+                type: "Water",
+                uniforms: {
+                  baseWaterColor: new Cesium.Color.fromCssColorString("#fff").withAlpha(0.1), //new Cesium.Color.AQUA.withAlpha(0.1),082567
+                  normalMap: Cesium.buildModuleUrl("Assets/Textures/waterNormals.jpg"),
+                  frequency: 1000.0, //频率
+                  animationSpeed: 0.01, //动画速度
+                  amplitude: 10, //振幅
+                },
+              },
+            }),
+          }),
+          show: true,
+        })
+      );
       ////_uri+"images/waterNormals.jpg"
-			
-     
     }
 
     //#endregion
@@ -3573,9 +3570,9 @@
         var upper1 = false;
         var upper2 = false;
 
-        _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
-        _this.IntelligentRoamingDynamicLine(viewer, polylineArr2);
-        _this.IntelligentRoamingDynamicLine(viewer, polylineArr3);
+        // _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
+        // _this.IntelligentRoamingDynamicLine(viewer, polylineArr2);
+        // _this.IntelligentRoamingDynamicLine(viewer, polylineArr3);
         var gltf_uri = "/assets/model/scene.gltf";
         if (!webgl_debug) var gltf_uri = "/3D/assets/model/scene.gltf";
         var entity = VMSDS.core.FlightRoaming(viewer, arr, gltf_uri, 0.01, "IntelligentRoamingV2", "IntelligentRoamingV2");
@@ -3623,31 +3620,44 @@
 
               var mapPosition = PatrolPoint[viewer.PatrolIndex];
 
-              var wsc = {
-                name: "IntelligentRoaming",
-                index: viewer.PatrolIndex,
-                position: mapPosition,
-                equipment: BackReference(viewer.PatrolIndex),
-              };
-              window.parent.postMessage(wsc, "*");
+              
+              if(!viewer.IntelligentRoaming_wscTimeout){
 
-              var type = 1;
-              //视角5定位点
-              if (viewer.PatrolIndex > 13) {
-                type = 2;
-              }
-              if (viewer.PatrolIndex >= 23) {
-                type = 3;
-              }
-              if (viewer.PatrolIndex < 13) {
-                type = 1;
-              }
-              viewer.IntelligentRoaming_Visual_TOGO_INDEX = type;
-              console.log(type, "typetypetypetype2");
-              if (viewer.IntelligentRoaming_Visual_TOGO) {
-                _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, type);
-              }
+                viewer.IntelligentRoaming_wscTimeout = setTimeout(() => {
+                  var wsc = {
+                    name: "IntelligentRoaming",
+                    index: viewer.PatrolIndex,
+                    position: mapPosition,
+                    equipment: BackReference(viewer.PatrolIndex),
+                  };
+                  window.parent.postMessage(wsc, "*");
+                  viewer.IntelligentRoaming_wscTimeout = false
+                }, 2000);
 
+
+              }
+              
+
+              if(viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined){
+                
+                var type = 1;
+                //视角5定位点
+                if (viewer.PatrolIndex > 13) {
+                  type = 2;
+                }
+                if (viewer.PatrolIndex >= 23) {
+                  type = 3;
+                }
+                if (viewer.PatrolIndex < 13) {
+                  type = 1;
+                }
+                viewer.IntelligentRoaming_Visual_TOGO_INDEX = type;
+                console.log(type, "typetypetypetype2");
+                if (viewer.IntelligentRoaming_Visual_TOGO) {
+                  _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, type);
+                }
+              }
+             
               viewer.PatrolIndex++;
               setTimeout(() => {
                 _this.IntelligentRoaming_Speed({
@@ -3749,12 +3759,12 @@
             }
           });
           VMSDS.core.Location(viewer, {
-            h: 5.98,
-            p: -0.4620486427,
-            r: 6.28,
-            x: 120.267191,
-            y: 30.293718,
-            z: 79.57,
+            h: 4.39,
+            p: -1.4693372159,
+            r: 0,
+            x: 120.26685,
+            y: 30.294919,
+            z: 288.03,
             duration: 0,
           });
 
@@ -5003,11 +5013,12 @@
 
       timestamp.push(FlightRoamingData[FlightRoamingData.length - 1]);
 
-      _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
-      _this.IntelligentRoamingDynamicLine(viewer, polylineArr2);
-      _this.IntelligentRoamingDynamicLine(viewer, polylineArr3);
+      // _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
+      // _this.IntelligentRoamingDynamicLine(viewer, polylineArr2);
+      // _this.IntelligentRoamingDynamicLine(viewer, polylineArr3);
       var gltf_uri = "/assets/model/scene.gltf";
       if (!webgl_debug) var gltf_uri = "/3D/assets/model/scene.gltf";
+      console.log(gltf_uri)
       var entity = VMSDS.core.FlightRoaming(viewer, arr, gltf_uri, 0.01, "IntelligentRoamingV2", "IntelligentRoamingV2");
 
       entity.path = {
@@ -5068,24 +5079,26 @@
               equipment: BackReference(viewer.PatrolIndex),
             };
             window.parent.postMessage(wsc, "*");
-
-            // console.log(viewer.PatrolIndex,BackReference(viewer.PatrolIndex),'PatrolIndex')
-            var type = 1;
-            //视角5定位点
-            if (viewer.PatrolIndex > 13) {
-              type = 2;
+            
+            if(viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined){
+              
+              // console.log(viewer.PatrolIndex,BackReference(viewer.PatrolIndex),'PatrolIndex')
+              var type = 1;
+              //视角5定位点
+              if (viewer.PatrolIndex > 13) {
+                type = 2;
+              }
+              if (viewer.PatrolIndex >= 23) {
+                type = 3;
+              }
+              if (viewer.PatrolIndex < 13) {
+                type = 1;
+              }
+              viewer.IntelligentRoaming_Visual_TOGO_INDEX = type;
+              if (viewer.IntelligentRoaming_Visual_TOGO) {
+                _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, type);
+              }
             }
-            if (viewer.PatrolIndex >= 23) {
-              type = 3;
-            }
-            if (viewer.PatrolIndex < 13) {
-              type = 1;
-            }
-            viewer.IntelligentRoaming_Visual_TOGO_INDEX = type;
-            if (viewer.IntelligentRoaming_Visual_TOGO) {
-              _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, type);
-            }
-
             viewer.PatrolIndex++;
             setTimeout(() => {
               _this.IntelligentRoaming_Speed({
@@ -5192,12 +5205,12 @@
           }
         });
         VMSDS.core.Location(viewer, {
-          h: 5.98,
-          p: -0.4620486427,
-          r: 6.28,
-          x: 120.267191,
-          y: 30.293718,
-          z: 79.57,
+          h: 4.39,
+          p: -1.4693372159,
+          r: 0,
+          x: 120.26685,
+          y: 30.294919,
+          z: 288.03,
           duration: 0,
         });
         _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
@@ -6283,6 +6296,7 @@
             });
             return;
           case 5:
+            
             go();
             _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, viewer.IntelligentRoaming_Visual_TOGO_INDEX ?? 1);
             return;
@@ -6590,6 +6604,8 @@
      * 展示气泡
      */
     example_pump_popup(value) {
+      var viewer = VMSDS.GIS;
+
       if (value == null) {
         value = {};
       }
@@ -6711,7 +6727,7 @@
 
         if (isRepeat()) {
           var popup = VMSDS.core.bubbleBombbox(
-            VMSDS.GIS,
+            viewer,
             {
               x: organism_.x,
               y: organism_.y,
@@ -6724,6 +6740,56 @@
 
           _this.MovePromptList.push(popup);
         }
+      }
+
+      if (!viewer._pump_popup_state) {
+        viewer._pump_popup_state = true;
+ 
+        viewer.scene.postRender.addEventListener(function () {
+          _this.MovePromptList.forEach(element => {
+            // console.log(element.infoDiv)
+            element.infoDiv.style.visibility = "hidden";
+
+
+            var cartographic = Cesium.Cartographic.fromCartesian(element.popupCartesian);
+            var lng = Cesium.Math.toDegrees(cartographic.longitude);
+            var lat = Cesium.Math.toDegrees(cartographic.latitude);
+            var mapPosition = { x: lng, y: lat, z: cartographic.height };
+  
+            // var data = {
+            //   position: viewer.camera.position,
+            //   heading: viewer.camera.heading,
+            //   pitch: viewer.camera.pitch
+            // }
+            
+            var data_cartographic = Cesium.Cartographic.fromCartesian(viewer.camera.position);
+            var data_lng = Cesium.Math.toDegrees(data_cartographic.longitude);
+            var data_lat = Cesium.Math.toDegrees(data_cartographic.latitude);
+            var data_Position = { x: data_lng, y: data_lat, z: data_cartographic.height };
+  
+            // console.log(data.position)  //当前视角
+            var satrt = Cesium.Cartographic.fromDegrees(mapPosition.x, mapPosition.x, mapPosition.z)//Cesium.Cartographic.fromDegrees(117.270739, 31.84309, 500);
+            var end =  Cesium.Cartographic.fromDegrees(data_Position.x, data_Position.x, data_Position.z);
+  
+            //计算两点直接多少米
+            function disTance(satrt, end) {
+              var geodesic = new Cesium.EllipsoidGeodesic();
+              geodesic.setEndPoints(satrt, end);
+              var s = geodesic.surfaceDistance;
+              s = Math.sqrt(Math.pow(s, 2) + Math.pow(end.height - satrt.height, 2));
+              return s.toFixed(2);
+            }
+            // console.log(Number(disTance(satrt, end)))
+            if(element.grade==3){
+              element.infoDiv.style.visibility = "";
+            }
+            if(Number(disTance(satrt, end)) <= 50){//拉近再显示
+              element.infoDiv.style.visibility = "";
+            }
+            // console.log(data_Position,mapPosition, disTance(satrt, end));
+            // return
+          });
+        });
       }
     }
 
@@ -6797,19 +6863,7 @@
           if (element.id == organism_.id) {
             var click = "window.parent.postMessage({name : 'example_pump_popup',type:'click',ButtonId : '" + organism_.id + "'} , '*');";
 
-            var dj = "-webkit-animation-name: commonly;";
-            switch (value.grade) {
-              case 1:
-                dj = "-webkit-animation-name: commonly;";
-                break;
-              case 2:
-                dj = "-webkit-animation-name: secondary;";
-                break;
-              case 3:
-                dj = "-webkit-animation-name: urgent;";
-                break;
-            }
-
+    
             var html = [
               '<div id="' +
                 "this.trackPopUpContentId" +
@@ -6850,72 +6904,32 @@
             ];
 
             var content1 =
-              `<div style="border-top: 23px solid #0a1f31ba;
-                        border-right: 20px solid transparent;
-                        width: 200px;
-                        bottom: 0px;">
-                        <div style="position: absolute;bottom: 28px;left: 24px; ` +
-              dj +
-              `" class="breathe-div"></div>
-                        <div style="color: #fff;cursor: pointer;position: absolute;bottom: 37px;left: 54px;" onclick="` +
+              `<div style="">
+                        <div style=;" onclick="` +
               click +
               `">` +
               value.txt +
               `<div/>
                         </div>`;
 
+                        
             var content2 =
-              `<div style="border-top: 169px solid #ff2727ba;
-                        box-shadow: 0px 0px 10px #d93f3f;
-                        width: 264px;
-                        bottom: 0px;">
-                        <div style="position: absolute;bottom: 43px;left: 24px; ` +
-              dj +
-              `" class="breathe-div"></div>
-                            <div style="    color: #fff;
-                            cursor: pointer;
-                            position: absolute;
-                            text-align: center;
-                            top: 25px;
-                            /* left: 54px; */
-                            width: 263px;
-                        " onclick="` +
+              `<div style="">
+                            <div style=" " onclick="` +
               click +
               `">` +
               value.header +
               `
-                            <div style="    width: 80%;
-                            margin: 0 auto;
-                            height: 41px;
-                            /* overflow: hidden; */
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;line-height: 57px;">` +
+                            <div style="">` +
               value.text1 +
               `</div>
-                            <div style="    width: 80%;
-                            margin: 0 auto;
-                            height: 41px;
-                            /* overflow: hidden; */
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;line-height: 36px;">` +
+                            <div style="">` +
               value.text2 +
               `</div>
-                            <div style="    width: 80%;
-                            margin: 0 auto;
-                            height: 41px;
-                            /* overflow: hidden; */
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;line-height: 17px;">` +
+                            <div style="">` +
               value.text3 +
               `</div><div/>
-                            <div class="popupButton" style="color: #fff;
-                            cursor: pointer;
-                            position: absolute;
-                            top: 130px;
-                            left: 18%;" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '1',ButtonId : '` +
+                            <div class="popupButton" style="" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '1',ButtonId : '` +
               organism_.id +
               `',diagnosis : '` +
               value.diagnosis +
@@ -6924,11 +6938,7 @@
               `',value:'` +
               value +
               `'} , '*');">查看</div>
-                            <div class="popupButton" style="color: #fff;
-                            cursor: pointer;
-                            position: absolute;
-                            top: 130px;
-                            left: 61%;" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '2',ButtonId : '` +
+                            <div class="popupButton" style="" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '2',ButtonId : '` +
               organism_.id +
               `',diagnosis : '` +
               value.diagnosis +
@@ -6944,42 +6954,38 @@
                         </div>`;
 
             var content3 =
-              `<div style="    border-top: 199px solid #ff2727ba;
-                        box-shadow: 0px 0px 10px #d93f3f;
-                        width: 300px;
-                        bottom: 0px;">
-                        <div style="position: absolute;bottom: 43px;left: 24px; ` +
-              dj +
-              `" class="breathe-div"></div>
-                            <div style="    color: #fff;
-                            cursor: pointer;
-                            position: absolute;
-                            text-align: center;
-                            top: 25px;
-                            /* left: 54px; */
-                            width: 299px;
-                        " onclick="` +
-              click +
-              `">` +
-              value.header +
-              `
-                            <div style="height: 124px;">` +
-              value.text +
-              `</div>
-                            <div class="popupButton" style="color: #fff;cursor: pointer;position: absolute;top: 151px;left: 38%;" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '2',ButtonId : '` +
-              organism_.id +
-              `',diagnosis : '` +
-              value.diagnosis +
-              `',deal_type:'` +
-              value.deal_type +
-              `',recordId:'` +
-              value.recordId +
-              `',equipmentName:'` +
-              value.equipmentName +
-              `',value:'` +
-              value +
-              `'} , '*');">立即处理</div>
-                        </div>`;
+            `
+            <div class="box9" style="box-shadow: 0px 0px 10px #d93f3f;
+            border-radius:5px;
+            color: #fff;
+            position: absolute;
+            top: 94px;
+            left: 38px;
+            height: 34px;
+            background-color: #ff4242b3;
+            width: 166px;
+            backdrop-filter: blur(10px);
+                ">
+                  <div title="${value.header}:${value.equipmentName}"  class="section4 flex-row justify-between" style="width: 91px !important;overflow: hidden !important;white-space: nowrap !important;
+                  text-overflow: ellipsis !important;padding: 8px 0 0 10px;font-size: 12px; font-weight: 700;
+                  height: 21px;">
+                    <span style=" " class="word30" >${value.header}:${value.equipmentName}</span>
+                    <div class="popupButton" style="width: 49px;z-index:999;color: #fff;cursor: pointer;position: absolute;top: 5px;left: 105px;" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '2',ButtonId : '` +
+                    organism_.id +
+                    `',diagnosis : '` +
+                    value.diagnosis +
+                    `',deal_type:'` +
+                    value.deal_type +
+                    `',recordId:'` +
+                    value.recordId +
+                    `',equipmentName:'` +
+                    value.equipmentName +
+                    `',value:'` +
+                    value +
+                    `'} , '*');">查看</div>
+                  </div>
+                </div>
+            `;
 
             var content = content1;
             switch (value.popupIndex) {
@@ -7005,7 +7011,23 @@
               html
             );
             popup.id = organism_.id;
+            popup.grade = value.grade
             _this.MovePromptList[i] = popup;
+
+            var _uri = "/assets/";
+            if (!webgl_debug) var _uri = "/3D/assets/";
+      
+            if(value.grade == 3){
+              $('.cesium-popup-tip').css("width","42px")
+              $('.cesium-popup-tip').css("height","66px")   
+              $('.cesium-popup-tip').css("background","url("+_uri+"img/SketchPng81163012e300ac28626489dc45bbcffd1198c2ee21675eea56fecfb50fdb09c3.png) 0px 1px no-repeat")
+              $('.cesium-popup-tip').css("box-shadow","0 3px 14px rgb(0 0 0 / 0%)")
+              $('.cesium-popup-tip').css("transform","none")
+              $('.cesium-popup-tip').css("margin","0px auto 0")
+              $('.cesium-popup-tip-container').css("height","66px")
+    
+            }
+
 
             switch (value.popupIndex) {
               case 0:
@@ -8010,22 +8032,21 @@
               }
             }
 
-            if (shapeType == "设备") {//设备点击事件
-              if(modle.show_)
-              {
+            if (shapeType == "设备") {
+              //设备点击事件
+              if (modle.show_) {
                 var defaultStyle = new Cesium.Cesium3DTileStyle({
                   color: "color('white', 1)",
                 });
-                modle.show_ = false
-              }else{
+                modle.show_ = false;
+              } else {
                 var defaultStyle = new Cesium.Cesium3DTileStyle({
                   color: "color('#adadad', 0.5)", //方案三 鼠标触发颜色
                 });
-                modle.show_ = true
+                modle.show_ = true;
               }
               modle.style = defaultStyle;
             }
-
           }
         }
       }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
@@ -9339,7 +9360,7 @@
     //添加摄像头
     addSecurityCamera() {
       var viewer = VMSDS.GIS;
-      if(viewer.setSelected) return
+      if (viewer.setSelected) return;
       viewer.setSelected = true;
       var arr = [
         { id: "3FD815955E4811ECA56200163E0132C0", camera: "{y: 30.293971, x: 120.266944, z: 25.89, h: 6.09, p: -0.6545561479,r: 0}", name: "外江围墙周界枪机", xyz: { x: 120.26691918084657, y: 30.294126148932428, z: 14 }, type: "摄像头-枪机" },
@@ -9361,7 +9382,7 @@
       //   if( i++ >= arr[i].length) i=0
       // }, 5000);
       var Gltfs = [];
-      if(!viewer) return
+      if (!viewer) return;
       for (let index = 0; index < arr.length; index++) {
         const element = arr[index];
 
@@ -9471,16 +9492,15 @@
 
       // return//不进行泛光
       var textGPU = getGPU();
-      console.log(textGPU)
-      if ("" !== textGPU)
-      {
+      console.log(textGPU);
+      if ("" !== textGPU) {
         Gltf.readyPromise
-        .then(function () {
-          setSelected(postProcessStage, Gltfs);
-        })
-        .otherwise(function (error) {
-          console.log(error);
-        });
+          .then(function () {
+            setSelected(postProcessStage, Gltfs);
+          })
+          .otherwise(function (error) {
+            console.log(error);
+          });
       }
       var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
       handler.setInputAction(function (movement) {
