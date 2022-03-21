@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>可视化地理空间数据服务研发平台 Visualization map spatial data service R&D</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src="\lib\jquery\jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../dist/include-lib.js" libpath="../" include="VMSDS"></script>
     <script type="text/javascript" src="../js/example.js" libpath="../" include="VMSDS"></script>
@@ -12,21 +12,21 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!--主要样式-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-  
 
-  <style>
-    html,body{
+    <style>
+      html,
+      body {
         margin: 0;
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         max-width: 100%;
         max-height: 100%;
         -webkit-font-smoothing: antialiased;
-    }
-    /* 地图容器 */
-    .map-container {
+      }
+      /* 地图容器 */
+      .map-container {
         /* top: 5.1%; */
         width: 100%;
         height: 100%;
@@ -34,14 +34,14 @@
         padding: 0;
         overflow: hidden;
         position: absolute;
-    }
-  
-    /* 功能按键容器 */
-    .infoview div {
-        margin-bottom: 5px;
-    }
+      }
 
-    .infoview {
+      /* 功能按键容器 */
+      .infoview div {
+        margin-bottom: 5px;
+      }
+
+      .infoview {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -52,55 +52,184 @@
         background: rgb(255 255 255 / 40%);
         box-shadow: 0 3px 14px rgba(128, 128, 128, 0.5);
         z-index: 999;
-    }
+      }
 
-    .infoview input,
-    .infoview select,
-    .infoview textarea {
+      .infoview input,
+      .infoview select,
+      .infoview textarea {
         color: #ffffff;
         background-color: rgba(32, 160, 255, 0.2);
         border: 1px solid #e4eaec;
         font-size: 14px;
-    }
-  </style>
-
+      }
+    </style>
   </head>
 
-  <body  scroll="no" id="mapbody">
-    
-  <!-- 地图容器 -->
-  <div id="mapBox" class="map-container"></div>
-
+  <body scroll="no" id="mapbody">
+    <!-- 地图容器 -->
+    <div id="mapBox" class="map-container"></div>
 
     <script>
-        /**实列方法**/
-        var QIBAO = new QIBAO();
-        QIBAO.example_InitMap();//初始化球体
-        QIBAO.example_BuildingStratification();//加载模型 建筑分层
-        //点击事件
-        function treeOnclick(v) {
-            VMSDS.core.QueryModel_Scene(window.VMSDS.GIS,$(v).attr("id")).show = ($(v).html() == "可视" ? false : true)
-            if($(v).html() == "可视")
-                $(v).html('不可视')
-            else
-                $(v).html('可视')
-        }
+      /**实列方法**/
+      var QIBAO = new QIBAO();
+      QIBAO.example_InitMap(); //初始化球体
+      QIBAO.example_BuildingStratification(); //加载模型 建筑分层
+      //点击事件
+      function treeOnclick(v) {
+        VMSDS.core.QueryModel_Scene(window.VMSDS.GIS, $(v).attr("id")).show = $(v).html() == "可视" ? false : true;
+        if ($(v).html() == "可视") $(v).html("不可视");
+        else $(v).html("可视");
+      }
+      // 617105292502663171 管理房1楼
+      // 617105292502663182 管理房2楼
+      // 617105292502663183 配水泵房
+      // 617105292502663184 排涝泵房
+      // 617105292502663185 配水闸室
+      // 617105292502663186 排涝闸室
 
-        QIBAO.example_positioning_pump(3);
-        QIBAO.example_pump_popup()
-        // setInterval(() => {
-        //   QIBAO.example_positioning_pump(Math.floor(Math.random()*7));
-        // }, 10000);
 
-        for (let index = 0; index < 7; index++) {
-          setTimeout(() => {
-            QIBAO.example_positioning_pump();
-            QIBAO.example_pump_popup(index)
-            QIBAO.example_event_spread({index:index})
-          }, index * 1000 * 5);
-        }
+      var d = ["617105292502663183","1435055590285029377","1435055173153107970","1435054816809234433","619534551667965952","1435056521521180673","1435057652284567554","1435058088999694337"];
+      for (let index = 0; index < d.length; index++) {
+        const element = d[index];
+        setTimeout(() => {
+          QIBAO.example_positioning_pump(element);
+          QIBAO.example_pump_popup({index:element});
+        }, index * 8000);
+        // debugger
+      }
+
+
+
+      //#region 
+      // QIBAO.example_positioning_pump('1435055590285029377');
+      // {
+      //   x: 120.26643624475356,
+      //   y: 30.29488368755079,
+      //   z: 10.460700769278687,
+      //   id: "1435055590285029377",
+      //   name: "泵体四号",
+      //   hpr: {
+      //     h: 2.71,
+      //     p: -0.6664038317,
+      //     r: 6.28,
+      //     x: 120.266374,
+      //     y: 30.294988,
+      //     z: 20.98,
+      //     name: "泵体一号",
+      //   },
+      // },
+      // {
+      //   x: 120.26639057662844,
+      //   y: 30.2948778666848,
+      //   z: 10.4659541057587876,
+      //   id: "1435055173153107970",
+      //   name: "泵体三号",
+      //   hpr: {
+      //     h: 2.71,
+      //     p: -0.6664037144,
+      //     r: 0,
+      //     x: 120.266315,
+      //     y: 30.29501,
+      //     z: 24.39,
+      //     name: "泵体二号",
+      //   },
+      // },
+      // {
+      //   x: 120.26634751704293,
+      //   y: 30.29487163529706,
+      //   z: 10.47115832267814,
+      //   id: "1435054816809234433",
+      //   name: "泵体二号",
+      //   hpr: {
+      //     h: 2.71,
+      //     p: -0.6664037153,
+      //     r: 0,
+      //     x: 120.266279,
+      //     y: 30.294979,
+      //     z: 20.99,
+      //     name: "泵体三号",
+      //   },
+      // },
+      // {
+      //   x: 120.26630450395568,
+      //   y: 30.294865682357855,
+      //   z: 10.46598014819476,
+      //   id: "619534551667965952",
+      //   name: "泵体一号",
+      //   hpr: {
+      //     h: 2.71,
+      //     p: -0.6664037143,
+      //     r: 0,
+      //     x: 120.266215,
+      //     y: 30.29501,
+      //     z: 24.57,
+      //     name: "泵体四号",
+      //   },
+      // },
+      // {
+      //     y: 30.294939,
+      //     x: 120.266646,
+      //     z: 10.4,
+      //     id: "1435056521521180673",
+      //     name: "泵体五号",
+      //     hpr: {
+      //       h: 2.51,
+      //       p: -0.4281743832,
+      //       r: 0,
+      //       x: 120.266509,
+      //       y: 30.295105,
+      //       z: 22.51,
+      //       name: "泵体五号",
+      //     },
+      //   },
+      //   {
+      //     y: 30.294953,
+      //     x: 120.26669,
+      //     z: 10.14,
+      //     id: "1435057652284567554",
+      //     name: "泵体六号",
+      //     hpr: {
+      //       h: 2.04,
+      //       p: -0.573329604,
+      //       r: 0,
+      //       x: 120.266507,
+      //       y: 30.295025,
+      //       z: 24.72,
+      //       name: "泵体六号",
+      //     },
+      //   },
+      //   {
+      //     y: 30.294971,
+      //     x: 120.266738,
+      //     z: 10.37,
+      //     id: "1435058088999694337",
+      //     name: "泵体七号",
+      //     hpr: {
+      //       h: 2.1,
+      //       p: -0.6685758218,
+      //       r: 0,
+      //       x: 120.266544,
+      //       y: 30.295051,
+      //       z: 28.94,
+      //       name: "泵体七号",
+      //     },
+      //   },
+      //#endregion
+
+      // setInterval(() => {
+      //   QIBAO.example_positioning_pump(Math.floor(Math.random()*7));
+      // }, 10000);
+
+      // data_popup_list.forEach(element => {
+      //   QIBAO.example_pump_popup({index:element.id});
+      // });
+      // for (let index = 0; index < 7; index++) {
+      //   setTimeout(() => {
+      //     QIBAO.example_positioning_pump();
+      //     QIBAO.example_pump_popup(index)
+      //     QIBAO.example_event_spread({index:index})
+      //   }, index * 1000 * 5);
+      // }
     </script>
-
-  
   </body>
 </html>

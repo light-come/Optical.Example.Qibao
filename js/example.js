@@ -12,7 +12,6 @@
   window.webgl_server_uri = webgl_debug ? "127.0.0.1:9731" : "120.79.137.28:9732";
   window.webgl_server_models_url = webgl_debug ? "127.0.0.1:9730" : "120.79.137.28:9733";
   /*************************************************** */
-
   class qb_hght_webgl_ {
     constructor() {
       this.DynamicDraw = null;
@@ -86,9 +85,119 @@
         { id: "1436254901735817218", name: "蓄电池柜2" },
       ];
 
-      // 1428159213999288321	供水系统
-
       window.data_popup_list = [
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663171",
+          name: "管理房1楼",
+          hpr: {
+            h: 4.26,
+            p: -0.9144292261,
+            r: 0,
+            x: 120.266579,
+            y: 30.295273,
+            z: 79.86,
+            name: "管理房1楼",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663182",
+          name: "管理房2楼",
+          hpr: {
+            h: 4.26,
+            p: -0.9144292261,
+            r: 0,
+            x: 120.266579,
+            y: 30.295273,
+            z: 79.86,
+            name: "管理房2楼",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663183",
+          name: "配水泵房",
+          hpr: {
+            h: 3.06,
+            p: -0.8833517371,
+            r: 0,
+            x: 120.266331,
+            y: 30.295409,
+            z: 78.65,
+            name: "配水泵房",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663184",
+          name: "排涝泵房",
+          hpr: {
+            h: 2.84,
+            p: -0.998780194,
+            r: 6.28,
+            x: 120.266485,
+            y: 30.29539,
+            z: 88.32,
+            name: "排涝泵房",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663185",
+          name: "配水闸室",
+          hpr: {
+            h: 6.22,
+            p: -0.9454957731,
+            r: 0,
+            x: 120.266665,
+            y: 30.293362,
+            z: 73.43,
+            name: "配水闸室",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "617105292502663186",
+          name: "排涝闸室",
+          hpr: {
+            h: 5.97,
+            p: -0.927737432,
+            r: 6.28,
+            x: 120.267289,
+            y: 30.293689,
+            z: 84.71,
+            name: "排涝闸室",
+          },
+        },
+        {
+          x: 120.26635947276584,
+          y: 30.294950239547614,
+          z: 13,
+          id: "1436237362930700290",
+          name: "1#皮带机",
+          hpr: {
+            h: 6.09,
+            p: -1.2614823485,
+            r: 6.28,
+            x: 120.266361,
+            y: 30.294891,
+            z: 39.68,
+            name: "1#皮带机",
+          },
+        },
         {
           x: 120.26635947276584,
           y: 30.294950239547614,
@@ -127,7 +236,7 @@
           y: 30.29412351210417,
           z: 13,
           id: "1435130443943948289",
-          name: "自排闸启闭机",
+          name: "3#启闭机",
           hpr: {
             h: 5.92,
             p: -1.2320704208,
@@ -135,7 +244,7 @@
             x: 120.267167,
             y: 30.294038,
             z: 56.54,
-            name: "自排闸启闭机",
+            name: "3#启闭机",
           },
         },
         {
@@ -159,7 +268,7 @@
           y: 30.29415144897889,
           z: 13,
           id: "1435130143325597698",
-          name: "大泵启闭机",
+          name: "2#启闭机",
           hpr: {
             h: 5.88,
             p: -1.2320704236,
@@ -167,7 +276,7 @@
             x: 120.267007,
             y: 30.29399,
             z: 56.52,
-            name: "大泵启闭机",
+            name: "2#启闭机",
           },
         },
         {
@@ -175,7 +284,7 @@
           y: 30.294111064388176,
           z: 11,
           id: "1435128522109661185",
-          name: "大泵闸门",
+          name: "排涝闸门",
           hpr: {
             h: 5.89,
             p: -0.4745122052,
@@ -183,7 +292,7 @@
             x: 120.267208,
             y: 30.293675,
             z: 42.59,
-            name: "大泵闸门",
+            name: "排涝闸门",
           },
         },
         {
@@ -191,7 +300,7 @@
           y: 30.293772697078406,
           z: 13,
           id: "1435129452477591553",
-          name: "小泵启闭机",
+          name: "1#启闭机",
           hpr: {
             h: 6.23,
             p: -0.9867160435,
@@ -199,7 +308,7 @@
             x: 120.26653,
             y: 30.293645,
             z: 42.52,
-            name: "小泵启闭机",
+            name: "1#启闭机",
           },
         },
         {
@@ -207,7 +316,7 @@
           y: 30.293744683965798,
           z: 11,
           id: "1428158279927787522",
-          name: "小泵闸门",
+          name: "配水闸门",
           hpr: {
             h: 6.27,
             p: -0.3612872039,
@@ -215,7 +324,7 @@
             x: 120.266566,
             y: 30.293476,
             z: 28.38,
-            name: "小泵闸门",
+            name: "配水闸门",
           },
         },
 
@@ -275,13 +384,21 @@
           id: "1435055590285029377",
           name: "泵体四号",
           hpr: {
+            h: 2.74,
+            p: -0.7099227958,
+            r: 6.28,
+            x: 120.266312,
+            y: 30.29513,
+            z: 37.93,
+            name: "泵体四号",
+          },
+          hpr2: {
             h: 2.71,
             p: -0.6664038317,
             r: 6.28,
             x: 120.266374,
             y: 30.294988,
             z: 20.98,
-            name: "泵体一号",
           },
         },
         {
@@ -291,13 +408,21 @@
           id: "1435055173153107970",
           name: "泵体三号",
           hpr: {
+            h: 2.74,
+            p: -0.7099227956,
+            r: 6.28,
+            x: 120.266252,
+            y: 30.295127,
+            z: 37.93,
+            name: "泵体三号",
+          },
+          hpr2: {
             h: 2.71,
             p: -0.6664037144,
             r: 0,
             x: 120.266315,
             y: 30.29501,
             z: 24.39,
-            name: "泵体二号",
           },
         },
         {
@@ -307,13 +432,21 @@
           id: "1435054816809234433",
           name: "泵体二号",
           hpr: {
+            h: 2.74,
+            p: -0.7099227946,
+            r: 6.28,
+            x: 120.266197,
+            y: 30.295108,
+            z: 37.92,
+            name: "泵体二号",
+          },
+          hpr2: {
             h: 2.71,
             p: -0.6664037153,
             r: 0,
             x: 120.266279,
             y: 30.294979,
             z: 20.99,
-            name: "泵体三号",
           },
         },
         {
@@ -323,15 +456,24 @@
           id: "619534551667965952",
           name: "泵体一号",
           hpr: {
+            h: 2.74,
+            p: -0.7099227949,
+            r: 6.28,
+            x: 120.266151,
+            y: 30.295106,
+            z: 37.92,
+            name: "泵体一号",
+          },
+          hpr2: {
             h: 2.71,
             p: -0.6664037143,
             r: 0,
             x: 120.266215,
             y: 30.29501,
             z: 24.57,
-            name: "泵体四号",
           },
         },
+
         {
           y: 30.294939,
           x: 120.266646,
@@ -339,13 +481,21 @@
           id: "1435056521521180673",
           name: "泵体五号",
           hpr: {
-            h: 2.51,
-            p: -0.4281743832,
-            r: 0,
+            h: 2.73,
+            p: -1.0872864964,
+            r: 6.28,
             x: 120.266509,
-            y: 30.295105,
-            z: 22.51,
+            y: 30.295136,
+            z: 56.08,
             name: "泵体五号",
+          },
+          hpr2: {
+            h: 2.15,
+            p: -0.9660265195,
+            r: 0,
+            x: 120.266501,
+            y: 30.29502,
+            z: 34.39,
           },
         },
         {
@@ -355,13 +505,21 @@
           id: "1435057652284567554",
           name: "泵体六号",
           hpr: {
-            h: 2.04,
-            p: -0.573329604,
-            r: 0,
-            x: 120.266507,
-            y: 30.295025,
-            z: 24.72,
+            h: 2.73,
+            p: -1.0872864971,
+            r: 6.28,
+            x: 120.266573,
+            y: 30.295149,
+            z: 56.09,
             name: "泵体六号",
+          },
+          hpr2: {
+            h: 2.15,
+            p: -0.9660265202,
+            r: 0,
+            x: 120.26656,
+            y: 30.295043,
+            z: 34.39,
           },
         },
         {
@@ -371,13 +529,21 @@
           id: "1435058088999694337",
           name: "泵体七号",
           hpr: {
-            h: 2.1,
-            p: -0.6685758218,
-            r: 0,
-            x: 120.266544,
-            y: 30.295051,
-            z: 28.94,
+            h: 2.73,
+            p: -1.0872864981,
+            r: 6.28,
+            x: 120.266628,
+            y: 30.295167,
+            z: 56.09,
             name: "泵体七号",
+          },
+          hpr2: {
+            h: 2.15,
+            p: -0.9660265209,
+            r: 0,
+            x: 120.266618,
+            y: 30.295063,
+            z: 34.4,
           },
         },
 
@@ -1672,6 +1838,7 @@
           return t;
         }
         cameraTimer = formatTime(s);
+
         function ISODateString(d) {
           function pad(n) {
             return n < 10 ? "0" + n : n;
@@ -1847,6 +2014,7 @@
     //画
     example_DynamicDraw(type) {
       this.initDynamicDraw();
+
       function _(positions) {
         var p = [];
         positions.forEach(element => {
@@ -2291,6 +2459,7 @@
         }
         var n1 = [];
         var n2 = [];
+
         function px_() {
           for (let index = 0; index < px.length; index++) {
             const e = px[index];
@@ -3318,10 +3487,13 @@
 
           for (let index = 0; index < xyList_time.length; index++) {
             const element = xyList_time[index];
-            if (element.index == paragraph && element.axis == axis - 1) {
+            if (element.index == paragraph && element.axis == (axis - 1)) {
               var start_time = element.time;
+              // console.log(element.index,element.axis,element,"11111111111111111111")
               // console.log(start_time,viewer.clock.startTime)
-              viewer.clock.currentTime = Cesium.JulianDate.fromDate(new Date(start_time));
+              var now = new Date(start_time);
+              viewer.clock.currentTime = Cesium.JulianDate.fromDate(new Date(now.setTime(now.getTime() - 100)));
+              viewer.MYLEFT_DOUBLE_CLICK = true;
             }
           }
         }
@@ -3458,6 +3630,7 @@
               return t;
             }
             cameraTimer = formatTime(s + mm);
+
             function ISODateString(d) {
               function pad(n) {
                 return n < 10 ? "0" + n : n;
@@ -3613,33 +3786,29 @@
             }
             if (Current_stamp >= new Date(PatrolPoint[viewer.PatrolIndex].time.toString()).getTime() - 100) {
               //开始 && !InitialTime.lock
-
               _this.IntelligentRoaming_Speed({
                 multiplier: 0, //当前世界速度 (可整体提高行走速度 必要也可以暂停模型)
               });
-
+              // console.log(viewer.PatrolIndex)
               var mapPosition = PatrolPoint[viewer.PatrolIndex];
 
-              
-              if(!viewer.IntelligentRoaming_wscTimeout){
-
+              if (!viewer.IntelligentRoaming_wscTimeout) {
                 viewer.IntelligentRoaming_wscTimeout = setTimeout(() => {
+
                   var wsc = {
                     name: "IntelligentRoaming",
-                    index: viewer.PatrolIndex,
+                    index: viewer.PatrolIndex-1,
                     position: mapPosition,
-                    equipment: BackReference(viewer.PatrolIndex),
+                    equipment: BackReference(viewer.PatrolIndex-1),
                   };
                   window.parent.postMessage(wsc, "*");
-                  viewer.IntelligentRoaming_wscTimeout = false
-                }, 2000);
+                  viewer.IntelligentRoaming_wscTimeout = false;
 
-
+                  viewer.MYLEFT_DOUBLE_CLICK = false;
+                }, viewer.MYLEFT_DOUBLE_CLICK ? 2500 : 100);
               }
-              
 
-              if(viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined){
-                
+              if (viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined) {
                 var type = 1;
                 //视角5定位点
                 if (viewer.PatrolIndex > 13) {
@@ -3657,7 +3826,7 @@
                   _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, type);
                 }
               }
-             
+
               viewer.PatrolIndex++;
               setTimeout(() => {
                 _this.IntelligentRoaming_Speed({
@@ -3680,6 +3849,13 @@
               console.log("时间事件末尾", new Date(Current_stamp).format("yyyy-MM-dd hh:mm:ss"));
               FlightRoamingData[FlightRoamingData.length - 1].lock = true;
               Processing_layering(1);
+
+              var wsc = {
+                name: "IntelligentRoaming_end",
+                index: viewer.PatrolIndex,
+              };
+              window.parent.postMessage(wsc, "*");
+
               viewer.PatrolIndex = 0; //重点坐标重置
             }
 
@@ -3759,12 +3935,12 @@
             }
           });
           VMSDS.core.Location(viewer, {
-            h: 4.39,
-            p: -1.4693372159,
-            r: 0,
-            x: 120.26685,
-            y: 30.294919,
-            z: 288.03,
+            h: 4.39,
+            p: -1.4693372159,
+            r: 0,
+            x: 120.26685,
+            y: 30.294919,
+            z: 288.03,
             duration: 0,
           });
 
@@ -3791,6 +3967,7 @@
         return true;
       }
       var _this = this;
+
       function Processing_layering(type) {
         var modle;
         if (type === 3) {
@@ -3937,6 +4114,7 @@
         }
       }
       var _this = this;
+
       function BackReference(index) {
         var list = [
           [
@@ -4145,6 +4323,7 @@
             Cesium.knockout.getObservable(viewModel, name).subscribe(updateMaterial);
           }
         }
+
         function updateMaterial() {
           // console.log(viewModel)
           _this.IntelligentRoaming_Speed({ multiplier: Number(viewModel.rate) });
@@ -4905,6 +5084,7 @@
             return t;
           }
           cameraTimer = formatTime(s + mm);
+
           function ISODateString(d) {
             function pad(n) {
               return n < 10 ? "0" + n : n;
@@ -5018,7 +5198,7 @@
       // _this.IntelligentRoamingDynamicLine(viewer, polylineArr3);
       var gltf_uri = "/assets/model/scene.gltf";
       if (!webgl_debug) var gltf_uri = "/3D/assets/model/scene.gltf";
-      console.log(gltf_uri)
+      console.log(gltf_uri);
       var entity = VMSDS.core.FlightRoaming(viewer, arr, gltf_uri, 0.01, "IntelligentRoamingV2", "IntelligentRoamingV2");
 
       entity.path = {
@@ -5079,9 +5259,8 @@
               equipment: BackReference(viewer.PatrolIndex),
             };
             window.parent.postMessage(wsc, "*");
-            
-            if(viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined){
-              
+
+            if (viewer.IntelligentRoaming_Visual_TOGO_INDEX != 0 && viewer.IntelligentRoaming_Visual_TOGO_INDEX != undefined) {
               // console.log(viewer.PatrolIndex,BackReference(viewer.PatrolIndex),'PatrolIndex')
               var type = 1;
               //视角5定位点
@@ -5132,6 +5311,12 @@
             //如下操作是防止短时间内事件重复
             timestamp[1].lock = false;
             timestamp[0].lock = false;
+
+            var wsc = {
+              name: "IntelligentRoaming_end",
+              index: viewer.PatrolIndex,
+            };
+            window.parent.postMessage(wsc, "*");
           }
 
           if (Current_stamp > Node_stamp && !timestamp[1].lock) {
@@ -5205,12 +5390,12 @@
           }
         });
         VMSDS.core.Location(viewer, {
-          h: 4.39,
-          p: -1.4693372159,
-          r: 0,
-          x: 120.26685,
-          y: 30.294919,
-          z: 288.03,
+          h: 4.39,
+          p: -1.4693372159,
+          r: 0,
+          x: 120.26685,
+          y: 30.294919,
+          z: 288.03,
           duration: 0,
         });
         _this.IntelligentRoamingDynamicLine(viewer, polylineArr1);
@@ -5232,6 +5417,7 @@
         return viewer;
       }
       var _this = this;
+
       function Processing_layering(type) {
         var modle;
         if (type === 3) {
@@ -5359,6 +5545,7 @@
           });
         }
       }
+
       function BackReference(index) {
         var list = [
           [
@@ -5866,6 +6053,7 @@
             return t;
           }
           cameraTimer = formatTime(s + mm);
+
           function ISODateString(d) {
             function pad(n) {
               return n < 10 ? "0" + n : n;
@@ -5957,6 +6145,7 @@
       viewer.clock.multiplier = multiplier;
 
       var _this = this;
+
       function app_viewer() {
         var viewer = VMSDS.control.addOverview("Overview");
         $(".overview-div").append(`
@@ -6134,6 +6323,12 @@
     IntelligentRoaming_Destroy() {
       const viewer = VMSDS.GIS;
 
+      var wsc = {
+        name: "IntelligentRoaming_end",
+        index: viewer.PatrolIndex,
+      };
+      window.parent.postMessage(wsc, "*");
+
       VMSDS.GIS.RoamingStatus == false; //解除防冲突
 
       window.mousePosition = function (ev) {
@@ -6223,6 +6418,7 @@
       viewer.scene.postUpdate.removeEventListener(VMSDS.GIS.IntelligentRoaming_VisualEvent);
       viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
       viewer.trackedEntity = undefined;
+
       function get_entity(viewer) {
         for (let index = 0; index < viewer.dataSources._dataSources.length; index++) {
           const element = viewer.dataSources._dataSources[index];
@@ -6296,11 +6492,35 @@
             });
             return;
           case 5:
-            
             go();
             _this.IntelligentRoaming_Visual({ visual: { type: 5 } }, undefined, viewer.IntelligentRoaming_Visual_TOGO_INDEX ?? 1);
             return;
+          case 6:
+            // camera.position = new Cesium.Cartesian3(-0, -0, 50);
+
+            var _cartographic = Cesium.Cartographic.fromCartesian(viewer.camera.position);
+            var _lng = Cesium.Math.toDegrees(_cartographic.longitude);
+            var _lat = Cesium.Math.toDegrees(_cartographic.latitude);
+            var _Position = { x: _lng, y: _lat, z: _cartographic.height };
+
+            var _model_cartographic = Cesium.Cartographic.fromCartesian(position);
+            var _model_lng = Cesium.Math.toDegrees(_model_cartographic.longitude);
+            var _model_lat = Cesium.Math.toDegrees(_model_cartographic.latitude);
+            var _model_Position = { x: _model_lng, y: _model_lat, z: _model_cartographic.height };
+
+            viewer.camera.flyTo({
+              destination: Cesium.Cartesian3.fromDegrees(_model_Position.x, _model_Position.y, 50),
+              orientation: {
+                heading: 4.42,
+                pitch: -1.5025040799,
+                roll: 6.28,
+              },
+              duration: 0,
+            });
+
+            return;
         }
+
         function go() {
           viewer.IntelligentRoaming_Visual_TOGO = true;
           if (to_go) {
@@ -6387,6 +6607,7 @@
      * 定位七个泵体
      */
     example_positioning_pump(index) {
+      var viewer = VMSDS.GIS;
       if (this.example_positioning_camera(index)) {
         return;
       }
@@ -6411,22 +6632,32 @@
         const element = arr[i];
         if (element.id == index) {
           element.hpr.duration = 3;
+
+          if (element.layer == "layer_1") {
+            Processing_layering(1);
+          } else if (element.layer == "layer_2") {
+            Processing_layering(2);
+          }
+          // console.log((element.name.indexOf("泵体") == -1),element.name)
+
+          // if (element.name.indexOf("泵体") == -1) {
+          element.hpr.duration = 4.5;
           VMSDS.core.Location(VMSDS.GIS, element.hpr); //定位坐标
-          return;
+          // }
+
+          // else {
+          //   element.hpr2.duration = 4.7;
+          //   // console.log(element.hpr2,element.hpr);
+          //   VMSDS.core.Location(VMSDS.GIS, element.hpr);
+          //   // setTimeout(() => {
+          //   //   VMSDS.core.Location(VMSDS.GIS, element.hpr2); //定位坐标
+          //   // }, 4000);
+          // }
         }
       }
-      if (arr[index] == null) {
-        console.warn("不存在", index);
-      }
-      arr[index].hpr.duration = 3;
 
-      console.log(arr[index].layer);
-      if (arr[index].layer == "layer_1") {
-        Processing_layering(1);
-      } else if (arr[index].layer == "layer_2") {
-        Processing_layering(2);
-      }
       var _this = this;
+
       function Processing_layering(type) {
         var modle;
         if (type === 3) {
@@ -6597,7 +6828,7 @@
 
       // }, 20);
 
-      VMSDS.core.Location(VMSDS.GIS, arr[index].hpr); //定位坐标
+      // VMSDS.core.Location(VMSDS.GIS, arr[index].hpr); //定位坐标
     }
 
     /***
@@ -6626,7 +6857,9 @@
       var _this = this;
       if (_this.MovePromptList == null) _this.MovePromptList = [];
       var organism_xy = [];
-
+      _this.MovePromptList.forEach(element => {
+        if (element.id === value.index) return;
+      });
       var arr = window.data_popup_list;
       if (index == null && value.index !== "*") {
         // organism_xy = arr
@@ -6744,33 +6977,32 @@
 
       if (!viewer._pump_popup_state) {
         viewer._pump_popup_state = true;
- 
+
         viewer.scene.postRender.addEventListener(function () {
           _this.MovePromptList.forEach(element => {
             // console.log(element.infoDiv)
             element.infoDiv.style.visibility = "hidden";
 
-
             var cartographic = Cesium.Cartographic.fromCartesian(element.popupCartesian);
             var lng = Cesium.Math.toDegrees(cartographic.longitude);
             var lat = Cesium.Math.toDegrees(cartographic.latitude);
             var mapPosition = { x: lng, y: lat, z: cartographic.height };
-  
+
             // var data = {
             //   position: viewer.camera.position,
             //   heading: viewer.camera.heading,
             //   pitch: viewer.camera.pitch
             // }
-            
+
             var data_cartographic = Cesium.Cartographic.fromCartesian(viewer.camera.position);
             var data_lng = Cesium.Math.toDegrees(data_cartographic.longitude);
             var data_lat = Cesium.Math.toDegrees(data_cartographic.latitude);
             var data_Position = { x: data_lng, y: data_lat, z: data_cartographic.height };
-  
+
             // console.log(data.position)  //当前视角
-            var satrt = Cesium.Cartographic.fromDegrees(mapPosition.x, mapPosition.x, mapPosition.z)//Cesium.Cartographic.fromDegrees(117.270739, 31.84309, 500);
-            var end =  Cesium.Cartographic.fromDegrees(data_Position.x, data_Position.x, data_Position.z);
-  
+            var satrt = Cesium.Cartographic.fromDegrees(mapPosition.x, mapPosition.x, mapPosition.z); //Cesium.Cartographic.fromDegrees(117.270739, 31.84309, 500);
+            var end = Cesium.Cartographic.fromDegrees(data_Position.x, data_Position.x, data_Position.z);
+
             //计算两点直接多少米
             function disTance(satrt, end) {
               var geodesic = new Cesium.EllipsoidGeodesic();
@@ -6780,10 +7012,11 @@
               return s.toFixed(2);
             }
             // console.log(Number(disTance(satrt, end)))
-            if(element.grade==3){
+            if (element.grade == 3) {
               element.infoDiv.style.visibility = "";
             }
-            if(Number(disTance(satrt, end)) <= 50){//拉近再显示
+            if (Number(disTance(satrt, end)) <= 50) {
+              //拉近再显示
               element.infoDiv.style.visibility = "";
             }
             // console.log(data_Position,mapPosition, disTance(satrt, end));
@@ -6836,6 +7069,7 @@
     example_popup_update(value) {
       var _this = this;
       if (_this.MovePromptList == null) _this.MovePromptList = [];
+
       var organism_xy = [];
 
       var arr = window.data_popup_list;
@@ -6860,10 +7094,13 @@
         //展示当前设备
         for (let i = 0; i < _this.MovePromptList.length; i++) {
           const element = _this.MovePromptList[i];
+          if (element.id == organism_.id && _this.MovePromptList[i].grade === 3) {
+            return;
+          }
+
           if (element.id == organism_.id) {
             var click = "window.parent.postMessage({name : 'example_pump_popup',type:'click',ButtonId : '" + organism_.id + "'} , '*');";
 
-    
             var html = [
               '<div id="' +
                 "this.trackPopUpContentId" +
@@ -6912,7 +7149,6 @@
               `<div/>
                         </div>`;
 
-                        
             var content2 =
               `<div style="">
                             <div style=" " onclick="` +
@@ -6954,7 +7190,7 @@
                         </div>`;
 
             var content3 =
-            `
+              `
             <div class="box9" style="box-shadow: 0px 0px 10px #d93f3f;
             border-radius:5px;
             color: #fff;
@@ -6971,18 +7207,18 @@
                   height: 21px;">
                     <span style=" " class="word30" >${value.header}:${value.equipmentName}</span>
                     <div class="popupButton" style="width: 49px;z-index:999;color: #fff;cursor: pointer;position: absolute;top: 5px;left: 105px;" onclick="window.parent.postMessage({name : 'example_pump_popup',type:'click',type : '2',ButtonId : '` +
-                    organism_.id +
-                    `',diagnosis : '` +
-                    value.diagnosis +
-                    `',deal_type:'` +
-                    value.deal_type +
-                    `',recordId:'` +
-                    value.recordId +
-                    `',equipmentName:'` +
-                    value.equipmentName +
-                    `',value:'` +
-                    value +
-                    `'} , '*');">查看</div>
+              organism_.id +
+              `',diagnosis : '` +
+              value.diagnosis +
+              `',deal_type:'` +
+              value.deal_type +
+              `',recordId:'` +
+              value.recordId +
+              `',equipmentName:'` +
+              value.equipmentName +
+              `',value:'` +
+              value +
+              `'} , '*');">查看</div>
                   </div>
                 </div>
             `;
@@ -7011,23 +7247,21 @@
               html
             );
             popup.id = organism_.id;
-            popup.grade = value.grade
+            popup.grade = value.grade;
             _this.MovePromptList[i] = popup;
 
             var _uri = "/assets/";
             if (!webgl_debug) var _uri = "/3D/assets/";
-      
-            if(value.grade == 3){
-              $('.cesium-popup-tip').css("width","42px")
-              $('.cesium-popup-tip').css("height","66px")   
-              $('.cesium-popup-tip').css("background","url("+_uri+"img/SketchPng81163012e300ac28626489dc45bbcffd1198c2ee21675eea56fecfb50fdb09c3.png) 0px 1px no-repeat")
-              $('.cesium-popup-tip').css("box-shadow","0 3px 14px rgb(0 0 0 / 0%)")
-              $('.cesium-popup-tip').css("transform","none")
-              $('.cesium-popup-tip').css("margin","0px auto 0")
-              $('.cesium-popup-tip-container').css("height","66px")
-    
-            }
 
+            if (value.grade == 3) {
+              $(".cesium-popup-tip").css("width", "42px");
+              $(".cesium-popup-tip").css("height", "66px");
+              $(".cesium-popup-tip").css("background", "url(" + _uri + "img/SketchPng81163012e300ac28626489dc45bbcffd1198c2ee21675eea56fecfb50fdb09c3.png) 0px 1px no-repeat");
+              $(".cesium-popup-tip").css("box-shadow", "0 3px 14px rgb(0 0 0 / 0%)");
+              $(".cesium-popup-tip").css("transform", "none");
+              $(".cesium-popup-tip").css("margin", "0px auto 0");
+              $(".cesium-popup-tip-container").css("height", "66px");
+            }
 
             switch (value.popupIndex) {
               case 0:
@@ -7039,12 +7273,17 @@
             }
           }
         }
+
+        // _this.MovePromptList.forEach(element => {
+        //   if(element.id === value.index)return
+        // });
       }
     }
     /***
      * 事件扩散效果
      */
     example_event_spread(value) {
+      // console.log(value,'事件扩散')
       var _this = this;
       if (_this.event_spreadList == null) _this.event_spreadList = [];
 
@@ -7075,7 +7314,7 @@
           x: arr[index].x,
           y: arr[index].y,
           z: 100,
-          size: 2,
+          size: 1.1,
         });
         mode.id = arr[index].id;
         _this.event_spreadList[index] = mode;
@@ -7438,10 +7677,10 @@
             uuid = "1428158279927787522";
           }
           if ("http://" + webgl_server_uri + "/3dtiles/SB/水闸/3/tileset.json" == str) {
-            uuid = "1435130443943948289";
+            uuid = "1435128938058788865"; //1435130443943948289
           }
           if ("http://" + webgl_server_uri + "/3dtiles/SB/启闭机/1/tileset.json" == str) {
-            uuid = "1435128938058788865";
+            uuid = "1435130443943948289"; //1435128938058788865
           }
           //#endregion
 
@@ -8214,11 +8453,11 @@
     fuwei() {
       VMSDS.core.Location(VMSDS.GIS, {
         h: 5.66,
-        p: -0.4613129754,
+        p: -0.4613129741,
         r: 6.28,
-        x: 120.267329,
-        y: 30.293386,
-        z: 71.56,
+        x: 120.268602,
+        y: 30.291957,
+        z: 184.25,
         duration: 0,
         force: true, //强制
       });
@@ -8472,6 +8711,7 @@
                 });
               }
             }
+
             function add_mod(viewer, e, key) {
               var model = VMSDS.core.add3DTiles(
                 viewer,
@@ -8565,6 +8805,7 @@
             $(btn).html("默认坐标");
           }, 1 * 1000 + 500);
         }, 2000);
+
         function MobileDetection(viewer) {
           viewer.cesiumWidget.screenSpaceEventHandler.setInputAction(function (mousePos) {
             mousePos = mousePos.endPosition;
@@ -8727,7 +8968,7 @@
           scale: 0.8,
           text: "管理范围线",
           font: "18px sans-serif",
-          fillColor: Cesium.Color.fromCssColorString("#fd0000"),
+          fillColor: Cesium.Color.fromCssColorString("#fff"), //fd0000
           style: Cesium.LabelStyle.FILL_AND_OUTLINE,
           outlineWidth: 3,
           verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
@@ -8747,7 +8988,7 @@
           scale: 0.8,
           text: "保护范围线",
           font: "18px sans-serif",
-          fillColor: Cesium.Color.fromCssColorString("#4395ff"),
+          fillColor: Cesium.Color.fromCssColorString("#fff"), //4395ff
           style: Cesium.LabelStyle.FILL_AND_OUTLINE,
           outlineWidth: 2,
           verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
@@ -8896,6 +9137,7 @@
           element.show = true;
         });
       }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
+
       function PumpBodyBuilding(type, tileset) {
         console.log(type);
 
@@ -8966,6 +9208,7 @@
         // console.log(models);
 
         _tileset = tileset;
+
         function set_height(_tileset, height) {
           viewer._cesiumWidget._creditContainer.style.display = "none";
           viewer.scene.globe.depthTestAgainstTerrain = false;
@@ -9157,6 +9400,94 @@
         _style
       );
     }
+    //添加道路名称筑标签
+    addRoadLabels() {
+      // 1.	钱塘江
+      // 2.	之江东路
+      // 3.	杨公南路
+      // 4.	和睦港
+
+      var arr = [
+        { id: "钱塘江", labeltxt: "钱塘江", x: 120.26711663409894, y: 30.29383754442642, z: 16 },
+        { id: "之江东路", labeltxt: "之江东路", x: 120.26691167371347, y: 30.294383360129935, z: 16 },
+        { id: "杨公南路", labeltxt: "杨公南路", x: 120.26684692663446, y: 30.29500778639834, z: 16 },
+        { id: "和睦港", labeltxt: "和睦港", x: 120.26639570228822, y: 30.2951846896652, z: 16 },
+      ];
+      const _style = {
+        //当前对象可选
+        fontSize: 1, //字体大小
+        fontColor: "#000", //字体颜色
+        borderWitch: 2, //文字边框大小
+        borderColor: "#fff", //边框颜色
+      };
+
+      //钱塘江名称 大型道路名称 河道名称
+      var model = [];
+      arr.forEach(element => {
+        var obj = VMSDS.core.addlabel(VMSDS.GIS, element, _style);
+        obj.element = element;
+        model.push(obj);
+      });
+
+      const scene = VMSDS.GIS.scene;
+      scene.globe.depthTestAgainstTerrain = true;
+      model.forEach(vehicleEntity => {
+        vehicleEntity.position = new Cesium.CallbackProperty(updatePosition, false);
+        vehicleEntity.label.disableDepthTestDistance = Number.POSITIVE_INFINITY;
+        // console.log(vehicleEntity);
+        const objectsToExclude = [vehicleEntity];
+        var cartographic = Cesium.Cartographic.fromCartesian(Cesium.Cartesian3.fromDegrees(vehicleEntity.element.x, vehicleEntity.element.y, 0));
+
+        function updatePosition(time, result) {
+          //贴地
+          // if(vehicleEntity.id == "之江东路"){
+          //   vehicleEntity.sampleHeight = 12
+          // }
+          if (vehicleEntity.sampleHeight > 8 ) {
+            // console.log(vehicleEntity.sampleHeight)
+            cartographic.height = vehicleEntity.sampleHeight;
+            // let lng = Cesium.Math.toDegrees(cartographic.longitude);
+            // let lat = Cesium.Math.toDegrees(cartographic.latitude);
+            // let height = cartographic.height; //模型高度
+            // let mapPosition = { x: lng, y: lat, z: height };
+            // console.log(mapPosition)
+
+            return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+          }
+          //undefined
+          let height;
+          if (scene.sampleHeightSupported) {
+            height = scene.sampleHeight(cartographic, objectsToExclude);
+          }
+
+          if (Cesium.defined(height)) {
+            cartographic.height = height;
+          } else {
+            cartographic.height = 0.0;
+          }
+          vehicleEntity.sampleHeight = height+1;
+
+          return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+        }
+      });
+      // const vehicleEntity = model
+      // vehicleEntity.position = new Cesium.CallbackProperty(updatePosition, false)
+      // viewer.entities.add({
+      //   position: new Cesium.CallbackProperty(updatePosition, false),
+      //   type: i - 1,
+      //   name: "cjgcds",
+      //   billboard: {
+      //     image: canvas,
+      //     scaleByDistance: new Cesium.NearFarScalar(20, 1, 60, 0.23),
+      //     // verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+      //     // heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+      //     disableDepthTestDistance : Number.POSITIVE_INFINITY,
+      //     width: 60,
+      //     height: 60,
+      //   },
+      // });
+    }
+
     //设置标签可视
     visibilitylabels(value) {
       var mods = VMSDS.core.QueryModel_Entities_x(VMSDS.GIS, {
@@ -9205,6 +9536,7 @@
           z: element.z,
         });
       });
+
       function init_canvas(viewer, value) {
         function drawText(e) {
           let canvas = document.createElement("canvas");
@@ -9482,6 +9814,7 @@
         Gltf.popup_name = element.name;
         Gltfs.push(Gltf);
       }
+
       function getGPU() {
         const canvas = document.createElement("canvas"),
           gl = canvas.getContext("experimental-webgl"),
@@ -9629,18 +9962,18 @@
     //添加沉降观测点
     addcjgcd(type) {
       var arr = [
-        { x: 120.26625716573467, y: 30.29494705910295, z: 15 },
-        { x: 120.26644080323425, y: 30.29499584219753, z: 15 },
-        { x: 120.26659957270506, y: 30.29501235529089, z: 15 },
-        { x: 120.26670565577997, y: 30.29510171870366, z: 15 },
-        { x: 120.26676138653185, y: 30.29497618287548, z: 15 },
-        { x: 120.26663509614802, y: 30.29493934643333, z: 15 },
-        { x: 120.26667203647445, y: 30.29487645802892, z: 15 },
-        { x: 120.26678801728804, y: 30.29491668369452, z: 15 },
-        { x: 120.26645800172548, y: 30.29490219027531, z: 15 },
-        { x: 120.26628612789985, y: 30.29485105603528, z: 15 },
-        { x: 120.26715434434782, y: 30.29413824139022, z: 15 },
-        { x: 120.26691298524635, y: 30.29406801913779, z: 15 },
+        { x: 120.26625716573467, y: 30.29494705910295, z: 6 },
+        { x: 120.26644080323425, y: 30.29499584219753, z: 6 },
+        { x: 120.26659957270506, y: 30.29501235529089, z: 6 },
+        { x: 120.26670565577997, y: 30.29510171870366, z: 6 },
+        { x: 120.26676138653185, y: 30.29497618287548, z: 6 },
+        { x: 120.26663509614802, y: 30.29493934643333, z: 6 },
+        { x: 120.26667203647445, y: 30.29487645802892, z: 6 },
+        { x: 120.26678801728804, y: 30.29491668369452, z: 6 },
+        { x: 120.26645800172548, y: 30.29490219027531, z: 6 },
+        { x: 120.26628612789985, y: 30.29485105603528, z: 6 },
+        { x: 120.26715434434782, y: 30.29413824139022, z: 6 },
+        { x: 120.26691298524635, y: 30.29406801913779, z: 6 },
       ];
 
       var i = 0;
@@ -9653,6 +9986,7 @@
           z: element.z,
         });
       });
+
       function init_canvas(viewer, value) {
         function drawText(e) {
           let canvas = document.createElement("canvas");
@@ -9676,18 +10010,83 @@
 
         if (type) {
           drawText(function (canvas) {
-            viewer.entities.add({
-              position: Cesium.Cartesian3.fromDegrees(value.x, value.y, value.z),
+            //贴地
+            // return
+            // var vehicleEntity = viewer.entities.add({
+            //   position: Cesium.Cartesian3.fromDegrees(value.x, value.y, 0),
+            //   type: i - 1,
+            //   name: "cjgcds",
+            //   billboard: {
+            //     image: canvas,
+            //     scaleByDistance: new Cesium.NearFarScalar(20, 1, 60, 0.23),
+            //     // verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+            //     // heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+            //     // disableDepthTestDistance : Number.POSITIVE_INFINITY,
+            //     width: 60,
+            //     height: 60,
+            //   },
+            // });
+
+            const scene = viewer.scene;
+            scene.globe.depthTestAgainstTerrain = true;
+
+            const vehicleEntity = viewer.entities.add({
+              position: new Cesium.CallbackProperty(updatePosition, false),
               type: i - 1,
               name: "cjgcds",
               billboard: {
                 image: canvas,
-                scaleByDistance: new Cesium.NearFarScalar(20, 1, 60, 0.1),
-                verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+                scaleByDistance: new Cesium.NearFarScalar(20, 1, 60, 0.23),
+                // verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+                // heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+                disableDepthTestDistance: Number.POSITIVE_INFINITY,
                 width: 60,
                 height: 60,
               },
             });
+
+            const objectsToExclude = [vehicleEntity];
+            var cartographic = Cesium.Cartographic.fromCartesian(Cesium.Cartesian3.fromDegrees(value.x, value.y, 0));
+
+            function updatePosition(time, result) {
+              //贴地
+              if (vehicleEntity.sampleHeight > 5) {
+                // console.log(vehicleEntity.sampleHeight)
+                cartographic.height = vehicleEntity.sampleHeight;
+                // let lng = Cesium.Math.toDegrees(cartographic.longitude);
+                // let lat = Cesium.Math.toDegrees(cartographic.latitude);
+                // let height = cartographic.height; //模型高度
+                // let mapPosition = { x: lng, y: lat, z: height };
+                // console.log(mapPosition)
+
+                return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+              }
+              //undefined
+              let height;
+              if (scene.sampleHeightSupported) {
+                height = scene.sampleHeight(cartographic, objectsToExclude);
+              }
+
+              if (Cesium.defined(height)) {
+                cartographic.height = height;
+              } else {
+                cartographic.height = 0.0;
+              }
+              vehicleEntity.sampleHeight = height;
+
+              return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+            }
+
+            // // Query the terrain height of two Cartographic positions
+            // var terrainProvider = Cesium.createWorldTerrain();
+            // var positions = [Cesium.Cartographic.fromDegrees(value.x, value.y)];
+            // var promise = Cesium.sampleTerrainMostDetailed(terrainProvider, positions);
+            // Cesium.when(promise, function (updatedPositions) {
+            //   console.log(updatedPositions[0]);
+            //   vehicleEntity.position._value = Cesium.Cartesian3.fromDegrees(value.x, value.y, updatedPositions[0].height);
+            //   // positions[0].height and positions[1].height have been updated.
+            //   // updatedPositions is just a reference to positions.
+            // });
           });
         } else {
           var dimensions = new Cesium.Cartesian3(10, 10, 10);
@@ -9721,7 +10120,182 @@
                   closed: false,
                   //translucent: false,
                   material: material,
-                }),
+                  clampToGround: true,
+                }), //贴地属性
+              })
+            );
+            model.name = "ProblemPoints";
+            model.type = i;
+          });
+          i++;
+        }
+      }
+    }
+
+    //添加水位信息
+    addswxx(type) {
+      var arr = [
+        { x: 120.26663169772905, y: 30.295121088025777, z: 1, water_level: "3.19", name: "内河" },
+        { x: 120.2662695033857, y: 30.295009002175814, z: 1, water_level: "4.25", name: "内河" },
+        { x: 120.26676193550003, y: 30.29485139264402, z: 1, water_level: "3.57", name: "出水口" },
+        { x: 120.26697492243164, y: 30.293997810010158, z: 1, water_level: "3.98", name: "外江" },
+      ];
+
+      var i = 0;
+
+      arr.forEach(element => {
+        var viewer = VMSDS.GIS;
+        init_canvas(viewer, {
+          x: element.x,
+          y: element.y,
+          z: element.z,
+          water_level: element.water_level,
+        });
+      });
+
+      function init_canvas(viewer, value) {
+        function drawText(e) {
+          let canvas = document.createElement("canvas");
+          canvas.height = 87;
+          canvas.width = 30;
+
+          var src = "/core/images/水位1.png";
+          if (!webgl_debug) src = "/3D/core/images/水位1.png";
+
+          getImg(value.water_level + " m", 12, src);
+
+          function getImg(text, fsz, src) {
+            var img = new Image();
+            img.src = src;
+            img.onload = function () {
+              //图片加载完成，才可处理
+              var c = canvas;
+              c.width = img.width;
+              c.height = img.height;
+              var cxt = c.getContext("2d");
+              cxt.fillStyle = "#ffffff00";
+              cxt.fillRect(0, 0, c.width, c.height);
+              cxt.drawImage(img, 0, 0);
+              cxt.save();
+              cxt.font = fsz + "px Arial";
+              cxt.textBaseline = "middle"; //更改字号后，必须重置对齐方式，否则居中麻烦。设置文本的垂直对齐方式
+              cxt.textAlign = "center";
+              var tw = cxt.measureText(text).width;
+              var ftop = c.height / 2 + 1;
+              var fleft = c.width / 2;
+              cxt.fillStyle = "#fff";
+              //cxt.fillRect(fleft-tw/2,ftop-fsz/2,tw,fsz);//矩形在画布居中方式
+              //cxt.fillStyle="#ffffff";
+              cxt.fillText(text, fleft, ftop); //文本元素在画布居中方式
+              // cxt.strokeStyle = "#ffffff";
+              // cxt.strokeText(text, fleft, ftop); //文字边框
+
+              e(canvas);
+            };
+          }
+
+          i++;
+        }
+
+        if (type) {
+          drawText(function (canvas) {
+            //贴地
+            const scene = viewer.scene;
+            scene.globe.depthTestAgainstTerrain = true;
+
+            const vehicleEntity = viewer.entities.add({
+              position: new Cesium.CallbackProperty(updatePosition, false),
+              type: i - 1,
+              name: "swxx",
+              billboard: {
+                image: canvas,
+                scaleByDistance: new Cesium.NearFarScalar(100, 1, 500, 0.13),
+                verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+                // heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+                // disableDepthTestDistance: Number.POSITIVE_INFINITY,
+                width: 87,
+                height: 30,
+              },
+            });
+
+            const objectsToExclude = [vehicleEntity];
+            var cartographic = Cesium.Cartographic.fromCartesian(Cesium.Cartesian3.fromDegrees(value.x, value.y, 0));
+
+            function updatePosition(time, result) {
+              //贴地
+              if (vehicleEntity.sampleHeight > 5) {
+                // console.log(vehicleEntity.sampleHeight)
+                cartographic.height = vehicleEntity.sampleHeight + 1;
+                // let lng = Cesium.Math.toDegrees(cartographic.longitude);
+                // let lat = Cesium.Math.toDegrees(cartographic.latitude);
+                // let height = cartographic.height; //模型高度
+                // let mapPosition = { x: lng, y: lat, z: height };
+                // console.log(mapPosition)
+
+                return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+              }
+              //undefined
+              let height;
+              if (scene.sampleHeightSupported) {
+                height = scene.sampleHeight(cartographic, objectsToExclude);
+              }
+
+              if (Cesium.defined(height)) {
+                cartographic.height = height;
+              } else {
+                cartographic.height = 0.0;
+              }
+              vehicleEntity.sampleHeight = height;
+
+              return Cesium.Cartographic.toCartesian(cartographic, Cesium.Ellipsoid.WGS84, result);
+            }
+
+            // // Query the terrain height of two Cartographic positions
+            // var terrainProvider = Cesium.createWorldTerrain();
+            // var positions = [Cesium.Cartographic.fromDegrees(value.x, value.y)];
+            // var promise = Cesium.sampleTerrainMostDetailed(terrainProvider, positions);
+            // Cesium.when(promise, function (updatedPositions) {
+            //   console.log(updatedPositions[0]);
+            //   vehicleEntity.position._value = Cesium.Cartesian3.fromDegrees(value.x, value.y, updatedPositions[0].height);
+            //   // positions[0].height and positions[1].height have been updated.
+            //   // updatedPositions is just a reference to positions.
+            // });
+          });
+        } else {
+          var dimensions = new Cesium.Cartesian3(10, 10, 10);
+          var positionOnEllipsoid = Cesium.Cartesian3.fromDegrees(value.x, value.y, value.z);
+          // var translateMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(positionOnEllipsoid);
+          var scaleMatrix = Cesium.Matrix4.fromScale(dimensions);
+
+          var hpr = new Cesium.HeadingPitchRoll(Cesium.Math.toRadians(0), Cesium.Math.toRadians(0), Cesium.Math.toRadians(0));
+          var translateMatrix = Cesium.Transforms.headingPitchRollToFixedFrame(positionOnEllipsoid, hpr);
+
+          var planeModelMatrix = new Cesium.Matrix4();
+
+          Cesium.Matrix4.multiply(translateMatrix, scaleMatrix, planeModelMatrix);
+
+          var planeGeometry = new Cesium.PlaneGeometry({
+            vertexFormat: Cesium.MaterialAppearance.VERTEX_FORMAT,
+          });
+          var planeGeometryInstance = new Cesium.GeometryInstance({
+            geometry: planeGeometry,
+            modelMatrix: planeModelMatrix,
+          });
+
+          drawText(function (canvas) {
+            var material = Cesium.Material.fromType("Image");
+
+            material.uniforms.image = canvas;
+
+            var model = viewer.scene.primitives.add(
+              new Cesium.Primitive({
+                geometryInstances: planeGeometryInstance,
+                appearance: new Cesium.MaterialAppearance({
+                  closed: false,
+                  //translucent: false,
+                  material: material,
+                  clampToGround: true,
+                }), //贴地属性
               })
             );
             model.name = "ProblemPoints";

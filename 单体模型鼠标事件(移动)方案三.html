@@ -105,6 +105,13 @@
           else $(v).html('可视');
         }
       }
+
+      var datas = [{ index: "1435090898376503298" }];
+      datas.forEach(element => {
+        QIBAO.example_event_spread({
+          index: element.index,
+        });
+      });
     </script>
   </body>
 </html>

@@ -111,11 +111,11 @@
 }
 
 .compass {
-  top: 304px;
+  top: 55%;
   /* top: 114px; */
   z-index: 107;
   pointer-events: auto;
-  right: 37px;
+  right: 30px;
   overflow: hidden
 }
 
@@ -235,6 +235,7 @@
     opacity: 1;
     cursor: pointer;
     z-index: 999;
+    visibility: hidden;
   }
   
 .overview-narrow {

@@ -73,24 +73,24 @@
 
 
     <script>
-        /**实列方法**/
-        var QIBAO = new QIBAO();
-        QIBAO.example_InitMap();//初始化球体
-        QIBAO.example_BuildingStratification();//加载模型 建筑分层
-        //点击事件
-        function treeOnclick(v) {
-        
+      /**实列方法**/
+      var QIBAO = new QIBAO();
+      QIBAO.example_InitMap();//初始化球体
+      QIBAO.example_BuildingStratification();//加载模型 建筑分层
+      //点击事件
+      function treeOnclick(v) {
+      
         if($(v).attr("id") == "93" || $(v).attr("id") == "94"){
-          for (let index = 0; index < Build.length; index++) {
-            const element = Build[index];
-            if(element.pId == $(v).attr("id")){
-              VMSDS.core.QueryModel_Scene(window.VMSDS.GIS,element.id).show = ($(v).html() == "可视" ? false : true)
+            for (let index = 0; index < Build.length; index++) {
+              const element = Build[index];
+              if(element.pId == $(v).attr("id")){
+                VMSDS.core.QueryModel_Scene(window.VMSDS.GIS,element.id).show = ($(v).html() == "可视" ? false : true)
+              }
             }
-          }
-          if($(v).html() == "可视")
-              $(v).html('不可视')
-          else
-              $(v).html('可视')
+            if($(v).html() == "可视")
+                $(v).html('不可视')
+            else
+                $(v).html('可视')
         }
         else{
             VMSDS.core.QueryModel_Scene(window.VMSDS.GIS,$(v).attr("id")).show = ($(v).html() == "可视" ? false : true)
@@ -101,29 +101,58 @@
         }
       }
 
-      
-        QIBAO.example_pump_popup()
-     
-   
-        for (let index = 0; index < 7; index++) {
-          setTimeout(() => {
+      for (let index = 0; index < data_popup_list.length; index++) {
+        const element = data_popup_list[index];
+        
+        if(index<=0){
+          QIBAO.example_pump_popup({
+            index:element.id,
+            // txt: '号泵出现紧急事件！',//文本内容
+            // popupIndex:1,
+            // grade:3,//状态 或 等级 1~3
+          })
+          QIBAO.example_event_spread({
+            index:element.id
+          });
 
-            // QIBAO.example_positioning_pump(index);//定位
-
-            QIBAO.example_popup_update({
-              index:QIBAO.CabinetList[index].id,
-              txt: (index + 1) + '号泵出现紧急事件！',//文本内容
-              popupIndex:1,
-              grade:3,//状态 或 等级 1~3
-            })
-            //销毁
-            QIBAO.example_event_spread_destroy({index:QIBAO.CabinetList[index - 1].id})
-            //告警特效
-            QIBAO.example_event_spread({
-              index:QIBAO.CabinetList[index].id
-            });
-          }, index * 1000 * 5);
+          QIBAO.example_popup_update({
+            index:data_popup_list[index].id,
+            txt: (index + 1) + '号泵出现紧急事件！',//文本内容
+            popupIndex:1,
+            grade:3,//状态 或 等级 1~3
+            diagnosis: "14818339123914752021435054816809234433"
+            ,equipmentName: "2#水泵"
+            ,header: "隐患点"
+            ,recordId: ""
+            ,text: ""
+            ,text1: "2#水泵"
+            ,text2: ""
+            ,text3: ""
+          })
         }
+      }
+    
+        
+
+      for (let index = 0; index < 7; index++) {
+        setTimeout(() => {
+
+          // QIBAO.example_positioning_pump(index);//定位
+
+          // QIBAO.example_popup_update({
+          //   index:data_popup_list[index].id,
+          //   txt: (index + 1) + '号泵出现紧急事件！',//文本内容
+          //   popupIndex:1,
+          //   grade:3,//状态 或 等级 1~3
+          // })
+          //销毁
+          // QIBAO.example_event_spread_destroy({index:data_popup_list[index - 1].id})
+          //告警特效
+          // QIBAO.example_event_spread({
+          //   index:data_popup_list[index].id
+          // });
+        }, index * 1000 * 5);
+      }
     </script>
 
   

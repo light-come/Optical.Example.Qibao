@@ -6,13 +6,15 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <script src="\lib\jquery\jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../dist/include-lib.js" libpath="../" include="VMSDS"></script>
-    <script type="text/javascript" src="../js/example.js" libpath="../" include="VMSDS"></script>
-
     <!--图标样式-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!--主要样式-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+    <script>
+     var cacheVersion = Date.parse(new Date());
+     var script = '<script type="text/javascript" src="../js/example.js?time=' + cacheVersion + '"><' + '/script>';
+     document.writeln(script);
+    </script>
   <style>
     html,body{
         margin: 0;
@@ -82,6 +84,9 @@
     QIBAO.example_add3DTiles();//杭州白膜
     QIBAO.SetWorldTime()// 设置时间为中午
     QIBAO.addcjgcd(true);//沉降点
+    QIBAO.addRoadLabels();//添加道路名称
+    QIBAO.example_addNavigation()//罗盘控件
+    QIBAO.addswxx(true);//水位信息
     //模型数据
     var Build;
     //触发器

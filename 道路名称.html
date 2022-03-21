@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>可视化地理空间数据服务研发平台 Visualization map spatial data service R&D</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <script src="\lib\jquery\jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../dist/include-lib.js" libpath="../" include="VMSDS"></script>
     <script type="text/javascript" src="../js/example.js" libpath="../" include="VMSDS"></script>
@@ -13,20 +13,19 @@
     <!--主要样式-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <style>
-      html,
-      body {
+  <style>
+    html,body{
         margin: 0;
-        width: 100%;
-        height: 100%;
+        width:100%;
+        height:100%;
         margin: 0;
         padding: 0;
         max-width: 100%;
         max-height: 100%;
         -webkit-font-smoothing: antialiased;
-      }
-      /* 地图容器 */
-      .map-container {
+    }
+    /* 地图容器 */
+    .map-container {
         /* top: 5.1%; */
         width: 100%;
         height: 100%;
@@ -34,14 +33,14 @@
         padding: 0;
         overflow: hidden;
         position: absolute;
-      }
-
-      /* 功能按键容器 */
-      .infoview div {
+    }
+  
+    /* 功能按键容器 */
+    .infoview div {
         margin-bottom: 5px;
-      }
+    }
 
-      .infoview {
+    .infoview {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -52,30 +51,35 @@
         background: rgb(255 255 255 / 40%);
         box-shadow: 0 3px 14px rgba(128, 128, 128, 0.5);
         z-index: 999;
-      }
+    }
 
-      .infoview input,
-      .infoview select,
-      .infoview textarea {
+    .infoview input,
+    .infoview select,
+    .infoview textarea {
         color: #ffffff;
         background-color: rgba(32, 160, 255, 0.2);
         border: 1px solid #e4eaec;
         font-size: 14px;
-      }
-    </style>
+    }
+  </style>
+
   </head>
 
-  <body scroll="no" id="mapbody">
-    <!-- 地图容器 -->
-    <div id="mapBox" class="map-container"></div>
+  <body  scroll="no" id="mapbody">
+
+  <!-- 地图容器 -->
+  <div id="mapBox" class="map-container"></div>
+
 
     <script>
-      /**实列方法**/
-      var QIBAO = new QIBAO();
-      QIBAO.example_InitMap(); //初始化球体
-      QIBAO.example_BuildingStratification(); //加载模型 建筑分层
-      QIBAO.addlabels(); //添加名称
-      QIBAO.visibilitylabels();
+        /**实列方法**/
+        var QIBAO = new QIBAO();
+        QIBAO.example_InitMap();//初始化球体
+        QIBAO.example_BuildingStratification();//加载模型 建筑分层
+        QIBAO.addRoadLabels();//添加道路名称
+        // QIBAO.visibilitylabels();
     </script>
+
+  
   </body>
 </html>
